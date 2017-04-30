@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap主题一览</title>
+    <script src="dist/js/jquery-3.2.0.js"></script>
+    <script src="dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <!--    <link rel="stylesheet" href="dist/css/bootstrap.css">-->
+
+    <style>
+        body {
+            font-family: "微软雅黑";
+            margin: auto;
+            width:1200px;
+        }
+
+        .panel {
+            width: 222px;
+            float: left;
+            margin-left: 5px;
+        }
+        #form .panel,#btn .panel,#image .panel,#dropdown .panel,#icon .panel,#btnGroup .panel,#btnDrop .panel,#input .panel,#navbar .panel,#pageNav .panel,#span .panel,#messageNav .panel,#jumbotron .panel,#pageHeader .panel,#imgThumb .panel,#alert .panel,#progress .panel,#listGroup .panel,#will .panel,#table .panel{
+            width:520px;
+            
+        }
+    </style>
+    <script>
+        
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                <a class="navbar-brand" href="#">Bootstrap样式</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">全局CSS样式 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">JavaScript插件</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">常用组件 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#panelD">Panel面板</a></li>
+                            <li><a href="#btn">Button按钮组件</a></li>
+                            <li><a href="#image">Image图片组件</a></li>
+                            <li><a href="#dropdown">DropDown下拉菜单组件</a></li>
+                            <li><a href="#icon">Icon图标组件</a></li>
+                            <li><a href="#btnGroup">ButtonGroup按钮组控件</a></li>
+                            <li><a href="#btnDrop">ButtonDropDown下拉按钮组件</a></li>
+                            <li><a href="#input">Input输入框组件</a></li>
+                            <li><a href="#navbar">NavBar导航栏组件</a></li>
+                            <li><a href="#pageNav">Page分页</a></li>
+                            <li><a href="#span">Span标签</a></li>
+                            <li><a href="#messageNav">Message徽章组件</a></li>
+                            <li><a href="#jumbotro">Jumbotron巨幕组件</a></li>
+                            <li><a href="#pageHeader">PageHeader页头</a></li>
+                            <li><a href="#imgThumb">Image缩略图</a></li> 
+                            <li><a href="#alert">Alert警告框</a></li>
+                            <li><a href="#progress">Progress进度条</a></li>
+                            <li><a href="#listGroup">List列表组</a></li>
+                            <li><a href="#will">Will面板</a></li>
+                            <li><a href="#table">Table表格组件</a></li> 
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="请输入组件名">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div id="panelD" class="container">
+       <blockquote>Panel面板组件</blockquote>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                class="panel panel-default"
+            </div>
+            <div class="panel-body">
+                &lt;div class="panel panel-default"&gt;<br/> &lt;div class="panel-heading"&gt;<br/> Panel面板标题内容
+                <br/> &lt;/div&gt;
+                <br/> &lt;div class="panel-body"&gt;<br/> Panel面板正文内容
+                <br/> &lt;/div&gt;
+                <br/>&lt;div class="panel-footer"&gt;<br/>Panel footer
+                <br/>&lt;/div&gt;
+                <br/> &lt;/div&gt;
+                <br/>
+            </div>
+            <div class="panel-footer">
+                Panel footer
+            </div>
+        </div>
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                class="panel panel-danger"
+            </div>
+            <div class="panel-body">
+                &lt;div class="panel panel-danger"&gt;<br/> &lt;div class="panel-heading"&gt;<br/> Panel面板标题内容
+                <br/> &lt;/div&gt;
+                <br/> &lt;div class="panel-body"&gt;<br/> Panel面板正文内容
+                <br/> &lt;/div&gt;
+                <br/>&lt;div class="panel-footer"&gt;<br/>Panel footer
+                <br/>&lt;/div&gt;
+                <br/> &lt;/div&gt;
+                <br/>
+            </div>
+            <div class="panel-footer">
+                Panel footer
+            </div>
+        </div>
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                class="panel panel-success"
+            </div>
+            <div class="panel-body">
+                &lt;div class="panel panel-success"&gt;<br/> &lt;div class="panel-heading"&gt;<br/> Panel面板标题内容
+                <br/> &lt;/div&gt;
+                <br/> &lt;div class="panel-body"&gt;<br/> Panel面板正文内容
+                <br/> &lt;/div&gt;
+                <br/>&lt;div class="panel-footer"&gt;<br/>Panel footer
+                <br/>&lt;/div&gt;
+                <br/> &lt;/div&gt;
+                <br/>
+            </div>
+            <div class="panel-footer">
+                Panel footer
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                class="panel panel-primary"
+            </div>
+            <div class="panel-body">
+                &lt;div class="panel panel-primary"&gt;<br/> &lt;div class="panel-heading"&gt;<br/> Panel面板标题内容
+                <br/> &lt;/div&gt;
+                <br/> &lt;div class="panel-body"&gt;<br/> Panel面板正文内容
+                <br/> &lt;/div&gt;
+                <br/>&lt;div class="panel-footer"&gt;<br/>Panel footer
+                <br/>&lt;/div&gt;
+                <br/> &lt;/div&gt;
+                <br/>
+            </div>
+            <div class="panel-footer">
+                Panel footer
+            </div>
+        </div>
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                class="panel panel-warning"
+            </div>
+            <div class="panel-body">
+                &lt;div class="panel panel-warning"&gt;<br/> &lt;div class="panel-heading"&gt;<br/> Panel面板标题内容
+                <br/> &lt;/div&gt;
+                <br/> &lt;div class="panel-body"&gt;<br/> Panel面板正文内容
+                <br/> &lt;/div&gt;
+                <br/>&lt;div class="panel-footer"&gt;<br/>Panel footer
+                <br/>&lt;/div&gt;
+                <br/> &lt;/div&gt;
+                <br/>
+            </div>
+            <div class="panel-footer">
+                Panel footer
+            </div>
+        </div>
+    </div>
+    <div id="form" class="container">
+     <blockquote>form表单组件</blockquote>
+      <div class="row">
+        <div class="panel btn-default">
+          <form>
+            <div class="form-group">
+              <label for="">用户名</label>
+              <input type="text" class="form-control" placeholder="用户名">
+            </div>
+            <div class="form-group">
+                <label for="">密码</label>
+                <input type="password" class="form-control" placeholder="密码">
+            </div>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-default">确定</button>
+                <button type="reset" class="btn btn-danger">重置</button>
+            </div>
+          </form>
+          
+        </div>
+        <div class="panel btn-default">
+              &lt;form&gt;<br/>
+                &lt;div class="form-group"&gt;<br/>
+                  &lt;label for=""&gt;用户名&lt;/label&gt;<br/>
+                  &lt;input type="text" class="form-control" placeholder="用户名"&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div class="form-group"&gt;<br/>
+                    &lt;label for=""&gt;密码&lt;/label&gt;<br/>
+                    &lt;input type="password" class="form-control" placeholder="密码"&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div class="form-group text-center"&gt;<br/>
+                    &lt;button type="submit" class="btn btn-default"&gt;确定&lt;/button&gt;<br/>
+                    &lt;button type="reset" class="btn btn-danger"&gt;重置&lt;/button&gt;<br/>
+                &lt;/div&gt;<br/>
+              &lt;/form&gt;<br/>
+          </div>
+        </div>
+    </div>
+    <div id="btn" class="container">
+        <blockquote>Button按钮组件</blockquote>
+        <div class="row">
+            <div class="panel panel-default">
+                <a class="btn btn-default" href="#" role="button">Link</a>
+                <button class="btn btn-default" type="submit">Button</button>
+                <input class="btn btn-default" type="button" value="Input">
+                <input class="btn btn-default" type="submit" value="submit">
+            </div>
+            <div class="panel panel-default">
+                &lt;a class="btn btn-default" href="#" role="button"&gt;Link&lt;/a&gt;<br/>
+                &lt;button class="btn btn-default" type="submit"&gt;Button&lt;/button&gt;<br/>
+                &lt;input class="btn btn-default" type="button" value="Input"&gt;<br/>
+                &lt;input class="btn btn-default" type="submit" value="submit"&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <button type="button" class="btn btn-default">(默认样式)Default</button>
+                <button type="button" class="btn btn-primary">(首选项)Primary</button>
+                <button type="button" class="btn btn-success">(成功)Success</button>
+                <button type="button" class="btn btn-info">(一般信息)Info</button>
+                <button type="button" class="btn btn-warning">(警告)Warning</button>
+                <button type="button" class="btn btn-danger">(危险)Danger</button>
+                <button type="button" class="btn btn-link">(连接)Link</button>
+            </div>
+            <div class="panel panel-default">
+                &lt;button type="button" class="btn btn-default"&gt;(默认样式)Default&lt;/button&gt;<br/>
+                &lt;button type="button" class="btn btn-primary"&gt;(首选项)Primary&lt;/button&gt;<br/>
+                &lt;button type="button" class="btn btn-success"&gt;(成功)Success&lt;/button&gt;<br/>
+                &lt;button type="button" class="btn btn-info"&gt;(一般信息)Info&lt;/button&gt;<br/>
+                &lt;button type="button" class="btn btn-warning"&gt;(警告)Warning&lt;/button&gt;<br/>
+                &lt;button type="button" class="btn btn-danger"&gt;(危险)Danger&lt;/button&gt;<br/>
+                &lt;button type="button" class="btn btn-link"&gt;(连接)Link&lt;/button&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <button type="button" class="btn btn-primary btn-lg">(大按钮)Large button</button>
+                <button type="button" class="btn btn-primary">(默认按钮)Default button</button>
+                <button type="button" class="btn btn-primary btn-sm">(小按钮)Small button</button>
+                <button type="button" class="btn btn-primary btn-xs">(超小按钮)Extra small button</button>
+            </div>
+            <div class="panel panel-default">
+                &lt;button type="button" class="btn btn-primary btn-lg"&gt;(大按钮)Large button&lt;/button&gt;<br/>
+                &lt;button type="button" class="btn btn-primary"&gt;(默认按钮)Default button&lt;/button&gt;<br/>
+                &lt;button type="button" class="btn btn-primary btn-sm"&gt;(小按钮)Small button&lt;/button&gt;<br/>
+                &lt;button type="button" class="btn btn-primary btn-xs"&gt;(超小按钮)Extra small button&lt;/button&gt;<br/>
+            </div>
+        </div>
+    </div>
+    <div id="image" class="container">
+        <blockquote>Image图片组件</blockquote>
+        <div class="row">
+            <div class="panel panel-default">
+                <img src="images/apple.png" alt="" class="img-rounded">
+                <img src="images/apple.png" alt="" class="img-circle">
+                <img src="images/apple.png" alt="" class="img-thumbnail">
+            </div>
+            <div class="panel panel-default">
+                &lt;img src="images/apple.png" alt="" class="img-rounded"&gt;<br/>
+                &lt;img src="images/apple.png" alt="" class="img-circle"&gt;<br/>
+                &lt;img src="images/apple.png" alt="" class="img-thumbnail"&gt;<br/>
+            </div>
+        </div>
+    </div>
+    <div id="dropdown" class="container">
+        <blockquote>Dropdown下拉菜单组件</blockquote>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">下拉菜单<span class="caret"></span></button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">下拉菜单一</a></li>
+                        <li><a href="#">下拉菜单二</a></li>
+                        <li><a href="#">下拉菜单三</a></li>
+                        <li><a href="#">下拉菜单四</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="dropdown"&gt;
+                    &lt;button class="btn btn-default dropdown-taggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"&gt;下拉菜单&lt;span class="caret"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+                    &lt;ul class="dropdown-menu" aria-labelledby="dropdownMenu1"&gt;<br/>
+                        &lt;li&gt;&lt;a href="#"&gt;下拉菜单一&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;下拉菜单二&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;下拉菜单三&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;下拉菜单四&lt;/a&gt;&lt;/li&gt;<br/>
+                    &lt;/ul&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+    </div>
+    <div id="icon" class="container">
+        <blockquote>Glyphicons图标组件</blockquote>
+        <div class="row">
+            <div class="panel panel-default">
+                <button type="button" class="btn btn-default" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="btn btn-default" aria-label="Middle Align">
+                    <span class="glyphicon glyphicon-align-center" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="btn btn-default" aria-label="Right Align">
+                    <span class="glyphicon glyphicon-align-right" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="btn btn-default" aria-label="Justify Align">
+                    <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="panel panel-default">
+                &lt;button type="button" class="btn btn-default" aria-label="Left Align"&gt;<br/>
+                    &lt;span class="glyphicon glyphicon-align-left" aria-hidden="true"&gt;&lt;/span&gt;<br/>
+                &lt;/button&gt;<br/>
+                &lt;button type="button" class="btn btn-default" aria-label="Middle Align"&gt;<br/>
+                    &lt;span class="glyphicon glyphicon-align-center" aria-hidden="true"&gt;&lt;/span&gt;<br/>
+                &lt;/button&gt;<br/>
+                &lt;button type="button" class="btn btn-default" aria-label="Right Align"&gt;<br/>
+                    &lt;span class="glyphicon glyphicon-align-right" aria-hidden="true"&gt;&lt;/span&gt;<br/>
+                &lt;/button&gt;<br/>
+                &lt;button type="button" class="btn btn-default" aria-label="Justify Align"&gt;<br/>
+                    &lt;span class="glyphicon glyphicon-align-justify" aria-hidden="true"&gt;&lt;/span&gt;<br/>
+                &lt;/button&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <button type="button" class="btn btn-default btn-lg">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>Star
+                </button>
+                <button type="button" class="btn btn-default btn-md">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>Star
+                </button>
+                <button type="button" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>Star
+                </button>
+                <button type="button" class="btn btn-default btn-xs">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>Star
+                </button>
+            </div>
+            <div class="panel panel-default">
+                &lt;button type="button" class="btn btn-default btn-lg"&gt;<br/>
+                    &lt;span class="glyphicon glyphicon-star" aria-hidden="true"&gt;&lt;/span&gt;Star<br/>
+                &lt;/button&gt;<br/>
+                &lt;button type="button" class="btn btn-default btn-md"&gt;<br/>
+                    &lt;span class="glyphicon glyphicon-star" aria-hidden="true"&gt;&lt;/span&gt;Star<br/>
+                &lt;/button&gt;<br/>
+                &lt;button type="button" class="btn btn-default btn-sm"&gt;<br/>
+                    &lt;span class="glyphicon glyphicon-star" aria-hidden="true"&gt;&lt;/span&gt;Star<br/>
+                &lt;/button&gt;<br/>
+                &lt;button type="button" class="btn btn-default btn-xs"&gt;<br/>
+                    &lt;span class="glyphicon glyphicon-star" aria-hidden="true"&gt;&lt;/span&gt;Star<br/>
+                &lt;/button&gt;<br/>
+            </div>
+        </div>
+    </div>
+    <div id="btnGroup" class="container">
+        <blockquote>ButtonGroup按钮组控件</blockquote>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="btn-group" role="group" aria-label="">
+                    <button class="btn btn-default">Left</button>
+                    <button class="btn btn-default">Middle</button>
+                    <button class="btn btn-default">Right</button>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="btn-group" role="group" aria-label=""&gt;<br/>
+                    &lt;button class="btn btn-default"&gt;Left&lt;/button&gt;<br/>
+                    &lt;button class="btn btn-default"&gt;Middle&lt;/button&gt;<br/>
+                    &lt;button class="btn btn-default"&gt;Right&lt;/button&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="btn-toolbar" role="toolbar" aria-label="">
+                   <div class="btn-group" role="group" aria-label="">
+                        <button class="btn btn-default">1</button>
+                        <button class="btn btn-default">2</button>
+                        <button class="btn btn-default">3</button>
+                        <button class="btn btn-default">4</button>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="">
+                        <button class="btn btn-default">5</button>
+                        <button class="btn btn-default">6</button>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="">
+                        <button class="btn btn-default">7</button>
+                        <button class="btn btn-default">8</button>
+                        <button class="btn btn-default">9</button>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="btn-toolbar" role="toolbar" aria-label=""&gt;<br/>
+                   &lt;div class="btn-group" role="group" aria-label=""&gt;<br/>
+                        &lt;button class="btn btn-default"&gt;1&lt;/button&gt;<br/>
+                        &lt;button class="btn btn-default"&gt;2&lt;/button&gt;<br/>
+                        &lt;button class="btn btn-default"&gt;3&lt;/button&gt;<br/>
+                        &lt;button class="btn btn-default"&gt;4&lt;/button&gt;<br/>
+                    &lt;/div&gt;<br/>
+                    &lt;div class="btn-group" role="group" aria-label=""&gt;<br/>
+                        &lt;button class="btn btn-default"&gt;5&lt;/button&gt;<br/>
+                        &lt;button class="btn btn-default"&gt;6&lt;/button&gt;<br/>
+                    &lt;/div&gt;<br/>
+                    &lt;div class="btn-group" role="group" aria-label=""&gt;<br/>
+                        &lt;button class="btn btn-default"&gt;7&lt;/button&gt;<br/>
+                        &lt;button class="btn btn-default"&gt;8&lt;/button&gt;<br/>
+                        &lt;button class="btn btn-default"&gt;9&lt;/button&gt;<br/>
+                    &lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="btn-group" role="group" aria-label="">
+                    <button class="btn btn-default">1</button>
+                    <button class="btn btn-default">2</button>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Dropdown<span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Dropdown list</a></li>
+                            <li><a href="#">Dropdown list</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="btn-group" role="group" aria-label=""&gt;<br/>
+                    &lt;button class="btn btn-default"&gt;1&lt;/button&gt;<br/>
+                    &lt;button class="btn btn-default"&gt;2&lt;/button&gt;<br/>
+                    &lt;div class="btn-group" role="group"&gt;<br/>
+                        &lt;button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"&gt;<br/>
+                            Dropdown&lt;span class="caret"&gt;&lt;/span&gt;<br/>
+                        &lt;/button&gt;<br/>
+                        &lt;ul class="dropdown-menu"&gt;<br/>
+                            &lt;li&gt;&lt;a href="#"&gt;Dropdown list&lt;/a&gt;&lt;/li&gt;<br/>
+                            &lt;li&gt;&lt;a href="#"&gt;Dropdown list&lt;/a&gt;&lt;/li&gt;<br/>
+                        &lt;/ul&gt;<br/>
+                    &lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="btn-group-vertical" role="group" aria-label="">
+                    <button class="btn btn-default">Button</button>
+                    <button class="btn btn-default">Button</button>
+                    <button class="btn btn-default">Button</button>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="btn-group-vertical" role="group" aria-label=""&gt;<br/>
+                    &lt;button class="btn btn-default"&gt;Button&lt;/button&gt;<br/>
+                    &lt;button class="btn btn-default"&gt;Button&lt;/button&gt;<br/>
+                    &lt;button class="btn btn-default"&gt;Button&lt;/button&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="btn-group btn-group-justified" role="group" aria-label="">
+                   <div class="btn-group" role="group">
+                       <button class="btn btn-default">Button</button>
+                   </div>
+                   <div class="btn-group" role="group">
+                       <button class="btn btn-default">Button</button>
+                   </div>
+                   <div class="btn-group" role="group">
+                       <button class="btn btn-default">Button</button>
+                   </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="btn-group btn-group-justified" role="group" aria-label=""&gt;<br/>
+                   &lt;div class="btn-group" role="group"&gt;<br/>
+                       &lt;button class="btn btn-default"&gt;Button&lt;/button&gt;<br/>
+                   &lt;/div&gt;<br/>
+                   &lt;div class="btn-group" role="group"&gt;<br/>
+                       &lt;button class="btn btn-default"&gt;Button&lt;/button&gt;<br/>
+                   &lt;/div&gt;<br/>
+                   &lt;div class="btn-group" role="group"&gt;<br/>
+                       &lt;button class="btn btn-default"&gt;Button&lt;/button&gt;<br/>
+                   &lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+    </div>
+    <div id="btnDrop" class="container">
+        <blockquote>ButtonDropDown单按钮下拉菜单组件</blockquote>
+        <div class="row">
+            <div class="panel panel-default">
+              <div class="dropdown">
+               <button class="btn btn-default dropdown-toggle" type="button" id="BtndropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Default<span class="caret"></span></button>
+               <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Primary<span class="caret"></span></button>
+               <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Success<span class="caret"></span></button>
+               <button class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Info<span class="caret"></span></button>
+               <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Warning<span class="caret"></span></button>
+               <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Danger<span class="caret"></span></button>
+               
+                <ul class="dropdown-menu" aria-labelledby="BtndropdownMenu1">
+                    <li><a href="#">下拉菜单一</a></li>
+                    <li><a href="#">下拉菜单二</a></li>
+                    <li><a href="#">下拉菜单三</a></li>
+                    <li><a href="#">下拉菜单四</a></li>
+                </ul>
+               </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="dropdown"&gt;<br/>
+               &lt;button class="btn btn-default dropdown-toggle" type="button" id="BtndropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"&gt;Default&lt;span class="caret"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+               &lt;button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"&gt;Primary&lt;span class="caret"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+               &lt;button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"&gt;Success&lt;span class="caret"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+               &lt;button class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"&gt;Info&lt;span class="caret"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+               &lt;button class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"&gt;Warning&lt;span class="caret"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+               &lt;button class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"&gt;Danger&lt;span class="caret"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+               
+                &lt;ul class="dropdown-menu" aria-labelledby="BtndropdownMenu1"&gt;<br/>
+                    &lt;li&gt;&lt;a href="#"&gt;下拉菜单一&lt;/a&gt;&lt;/li&gt;<br/>
+                    &lt;li&gt;&lt;a href="#"&gt;下拉菜单二&lt;/a&gt;&lt;/li&gt;<br/>
+                    &lt;li&gt;&lt;a href="#"&gt;下拉菜单三&lt;/a&gt;&lt;/li&gt;<br/>
+                    &lt;li&gt;&lt;a href="#"&gt;下拉菜单四&lt;/a&gt;&lt;/li&gt;<br/>
+                &lt;/ul&gt;<br/>
+               &lt;/div&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+               <div class="dropdown">
+                   <div class="btn-group">
+                       <button type="button" class="btn btn-default">Default</button>
+                       <button class="btn btn-default dropdown-toggle" type="button" id="BtnGroupdropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span><span class="sr-only">Toggle Dropdown</span></button>
+                       <ul class="dropdown-menu" aria-labelledby="BtnGroupdropdownMenu1">
+                            <li><a href="#">下拉菜单一</a></li>
+                            <li><a href="#">下拉菜单二</a></li>
+                            <li><a href="#">下拉菜单三</a></li>
+                            <li><a href="#">下拉菜单四</a></li>
+                        </ul>
+                   </div>
+                   <div class="btn-group">
+                       <button type="button" class="btn btn-primary">Primary</button>
+                       <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span><span class="sr-only">Toggle Dropdown</span></button>
+                   </div>
+                   <div class="btn-group">
+                       <button type="button" class="btn btn-success">Success</button>
+                       <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span><span class="sr-only">Toggle Dropdown</span></button>
+                   </div>
+                   <div class="btn-group">
+                       <button type="button" class="btn btn-info">Info</button>
+                       <button class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span><span class="sr-only">Toggle Dropdown</span></button>
+                   </div>
+                   <div class="btn-group">
+                       <button type="button" class="btn btn-warning">Warning</button>
+                       <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span><span class="sr-only">Toggle Dropdown</span></button>
+                   </div>
+                </div> 
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="dropdown"&gt;<br/>
+                   &lt;div class="btn-group"&gt;<br/>
+                       &lt;button type="button" class="btn btn-default"&gt;Default&lt;/button&gt;<br/>
+                       &lt;button class="btn btn-default dropdown-toggle" type="button" id="BtnGroupdropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"&gt;&lt;span class="caret"&gt;&lt;/span&gt;&lt;span class="sr-only"&gt;Toggle Dropdown&lt;/span&gt;&lt;/button&gt;<br/>
+                       &lt;ul class="dropdown-menu" aria-labelledby="BtnGroupdropdownMenu1"&gt;<br/>
+                            &lt;li&gt;&lt;a href="#"&gt;下拉菜单一&lt;/a&gt;&lt;/li&gt;<br/>
+                            &lt;li&gt;&lt;a href="#"&gt;下拉菜单二&lt;/a&gt;&lt;/li&gt;<br/>
+                            &lt;li&gt;&lt;a href="#"&gt;下拉菜单三&lt;/a&gt;&lt;/li&gt;<br/>
+                            &lt;li&gt;&lt;a href="#"&gt;下拉菜单四&lt;/a&gt;&lt;/li&gt;<br/>
+                        &lt;/ul&gt;<br/>
+                   &lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+    </div>
+    <div id="input" class="container">
+        <blockquote>Input输入框组件</blockquote>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="username" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="input-group"&gt;<br/>
+                    &lt;span class="input-group-addon" id="basic-addon1"&gt;@&lt;/span&gt;<br/>
+                    &lt;input type="text" class="form-control" placeholder="username" aria-describedby="basic-addon1"&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Recipitent's uaername" aria-describedby="basic-addon2">
+                    <span class="input-group-addon" id="basic-addon2">@hotmial.com</span>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="input-group"&gt;<br/>
+                    &lt;input type="text" class="form-control" placeholder="Recipitent's uaername" aria-describedby="basic-addon2"&gt;<br/>
+                    &lt;span class="input-group-addon" id="basic-addon2"&gt;@hotmial.com&lt;/span&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input type="text" class="form-control" aria-label="Amount(to the nearest dollar)">
+                    <span class="input-group-addon">.00</span>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="input-group"&gt;<br/>
+                    &lt;span class="input-group-addon"&gt;$&lt;/span&gt;<br/>
+                    &lt;input type="text" class="form-control" aria-label="Amount(to the nearest dollar)"&gt;<br/>
+                    &lt;span class="input-group-addon"&gt;.00&lt;/span&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="input-group">
+                    <span class="input-group-addon">http://www.</span>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="input-group"&gt;<br/>
+                    &lt;span class="input-group-addon"&gt;http://www.&lt;/span&gt;<br/>
+                    &lt;input type="text" class="form-control"&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <input type="checkbox">
+                    </span>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <input type="radio">
+                    </span>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="input-group"&gt;<br/>
+                    &lt;span class="input-group-addon"&gt;<br/>
+                        &lt;input type="checkbox"&gt;<br/>
+                    &lt;/span&gt;<br/>
+                    &lt;input type="text" class="form-control"&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div class="input-group"&gt;<br/>
+                    &lt;span class="input-group-addon"&gt;<br/>
+                        &lt;input type="radio"&gt;<br/>
+                    &lt;/span&gt;<br/>
+                    &lt;input type="text" class="form-control"&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default">Go</button>
+                    </span>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="input-group"&gt;<br/>
+                    &lt;span class="input-group-btn"&gt;<br/>
+                        &lt;button type="button" class="btn btn-default"&gt;Go&lt;/button&gt;<br/>
+                    &lt;/span&gt;<br/>
+                    &lt;input type="text" class="form-control"&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="input-group">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" id="InputDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Action<span class="caret"></span></button>
+                        <ul class="dropdown-menu" aria-labelledby="InputDown">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Action</a></li>
+                        </ul>
+                    </div>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="input-group"&gt;<br/>
+                    &lt;div class="input-group-btn"&gt;<br/>
+                        &lt;button type="button" class="btn btn-default dropdown-toggle" id="InputDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"&gt;Action&lt;span class="caret"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+                        &lt;ul class="dropdown-menu" aria-labelledby="InputDown"&gt;<br/>
+                            &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;<br/>
+                            &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;<br/>
+                            &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;<br/>
+                            &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;<br/>
+                        &lt;/ul&gt;<br/>
+                    &lt;/div&gt;<br/>
+                    &lt;input type="text" class="form-control"&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="input-group">
+                    <div class="input-group-btn">
+                       <button type="button" class="btn btn-default">
+                           <span class="glyphicon glyphicon-bold"></span>
+                       </button>
+                       <button type="button" class="btn btn-default">
+                           <span class="glyphicon glyphicon-italic"></span>
+                       </button> 
+                    </div>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="input-group"&gt;<br/>
+                    &lt;div class="input-group-btn"&gt;<br/>
+                       &lt;button type="button" class="btn btn-default"&gt;<br/>
+                           &lt;span class="glyphicon glyphicon-bold"&gt;&lt;/span&gt;<br/>
+                       &lt;/button&gt;<br/>
+                       &lt;button type="button" class="btn btn-default"&gt;<br/>
+                           &lt;span class="glyphicon glyphicon-italic"&gt;&lt;/span&gt;<br/>
+                       &lt;/button&gt; <br/>
+                    &lt;/div&gt;<br/>
+                    &lt;input type="text" class="form-control"&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+               <div class="form-group has-success has-feedback">
+                   <label for="" class="control-label">Input with success</label>
+                   <input type="text" class="form-control">
+                   <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                   <span class="sr-only">(success)</span>
+               </div>
+               <div class="form-group has-warning has-feedback">
+                   <label for="" class="control-label">Input with warning</label>
+                   <input type="text" class="form-control">
+                   <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+                   <span class="sr-only">(warning)</span>
+               </div>
+               <div class="form-group has-error has-feedback">
+                   <label for="" class="control-label">Input with error</label>
+                   <input type="text" class="form-control">
+                   <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                   <span class="sr-only">(error)</span>
+               </div>
+               <div class="form-group has-success has-feedback">
+                   <label for="" class="control-label">Input with success</label>
+                   <div class="input-group">
+                       <span class="input-group-addon">@</span>
+                       <input type="text" class="form-control">
+                   </div>
+                   <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                   <span class="sr-only">(success)</span>
+               </div> 
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="form-group has-success has-feedback"&gt;<br/>
+                   &lt;label for="" class="control-label"&gt;Input with success&lt;/label&gt;<br/>
+                   &lt;input type="text" class="form-control"&gt;<br/>
+                   &lt;span class="glyphicon glyphicon-ok form-control-feedback"&gt;&lt;/span&gt;<br/>
+                   &lt;span class="sr-only"&gt;(success)&lt;/span&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="form-group has-warning has-feedback"&gt;<br/>
+                   &lt;label for="" class="control-label"&gt;Input with warning&lt;/label&gt;<br/>
+                   &lt;input type="text" class="form-control"&gt;<br/>
+                   &lt;span class="glyphicon glyphicon-warning-sign form-control-feedback"&gt;&lt;/span&gt;<br/>
+                   &lt;span class="sr-only"&gt;(warning)&lt;/span&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="form-group has-error has-feedback"&gt;<br/>
+                   &lt;label for="" class="control-label"&gt;Input with error&lt;/label&gt;<br/>
+                   &lt;input type="text" class="form-control"&gt;<br/>
+                   &lt;span class="glyphicon glyphicon-remove form-control-feedback"&gt;&lt;/span&gt;<br/>
+                   &lt;span class="sr-only"&gt;(error)&lt;/span&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="form-group has-success has-feedback"&gt;<br/>
+                   &lt;label for="" class="control-label"&gt;Input with success&lt;/label&gt;<br/>
+                   &lt;div class="input-group"&gt;<br/>
+                       &lt;span class="input-group-addon"&gt;@&lt;/span&gt;<br/>
+                       &lt;input type="text" class="form-control"&gt;<br/>
+                   &lt;/div&gt;<br/>
+                   &lt;span class="glyphicon glyphicon-ok form-control-feedback"&gt;&lt;/span&gt;<br/>
+                   &lt;span class="sr-only"&gt;(success)&lt;/span&gt;<br/>
+               &lt;/div&gt;<br/>
+            </div>
+        </div>
+    </div>
+    <div id="navbar" class="container">
+        <blockquote>Nav导航组件</blockquote>
+        <div class="row">
+            <div class="panel panel-default">
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active"><a href="#">Home</a></li>
+                    <li role="presentation"><a href="#">Profile</a></li>
+                    <li role="presentation"><a href="#">Messages</a></li>
+                </ul>
+            </div>
+            <div class="panel panel-default">
+                &lt;ul class="nav nav-tabs"&gt;<br/>
+                    &lt;li role="presentation" class="active"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;<br/>
+                    &lt;li role="presentation"&gt;&lt;a href="#"&gt;Profile&lt;/a&gt;&lt;/li&gt;<br/>
+                    &lt;li role="presentation"&gt;&lt;a href="#"&gt;Messages&lt;/a&gt;&lt;/li&gt;<br/>
+                &lt;/ul&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <ul class="nav nav-pills">
+                    <li role="presentation" class="active"><a href="#">Home</a></li>
+                    <li role="presentation"><a href="#">Profile</a></li>
+                    <li role="presentation"><a href="#">Messages</a></li>
+                </ul>
+            </div>
+            <div class="panel panel-default">
+                &lt;ul class="nav nav-pills"&gt;<br/>
+                    &lt;li role="presentation" class="active"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;<br/>
+                    &lt;li role="presentation"&gt;&lt;a href="#"&gt;Profile&lt;/a&gt;&lt;/li&gt;<br/>
+                    &lt;li role="presentation"&gt;&lt;a href="#"&gt;Messages&lt;/a&gt;&lt;/li&gt;<br/>
+                &lt;/ul&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active"><a href="#">Home</a></li>
+                    <li role="presentation"><a href="#">Profile</a></li>
+                    <li role="presentation">
+                        <a class="dropdown-toggle" data-toggle="dropdown" id="navDown" href="#" role="button" aria-haspopup="true" aria-expanded="true">Messages<span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="navDown">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Action</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="panel panel-default">
+                &lt;ul class="nav nav-tabs"&gt;<br/>
+                    &lt;li role="presentation" class="active"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;<br/>
+                    &lt;li role="presentation"&gt;&lt;a href="#"&gt;Profile&lt;/a&gt;&lt;/li&gt;<br/>
+                    &lt;li role="presentation"&gt;<br/>
+                        &lt;a class="dropdown-toggle" data-toggle="dropdown" id="navDown" href="#" role="button" aria-haspopup="true" aria-expanded="true"&gt;Messages&lt;span class="caret"&gt;&lt;/span&gt;&lt;/a&gt;<br/>
+                        &lt;ul class="dropdown-menu" aria-labelledby="navDown"&gt;<br/>
+                            &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;<br/>
+                            &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;<br/>
+                            &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;<br/>
+                        &lt;/ul&gt;<br/>
+                    &lt;/li&gt;<br/>
+                &lt;/ul&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <nav class="navbar navbar-inverse">
+                   <ul class="nav navbar-nav">
+                    <li role="presentation" class="active"><a href="#">Home</a></li>
+                    <li role="presentation"><a href="#">Profile</a></li>
+                    <li role="presentation"><a href="#">Messages</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="panel panel-default">
+                &lt;nav class="navbar navbar-inverse"&gt;<br/>
+                   &lt;ul class="nav navbar-nav"&gt;<br/>
+                    &lt;li role="presentation" class="active"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;<br/>
+                    &lt;li role="presentation"&gt;&lt;a href="#"&gt;Profile&lt;/a&gt;&lt;/li&gt;<br/>
+                    &lt;li role="presentation"&gt;&lt;a href="#"&gt;Messages&lt;/a&gt;&lt;/li&gt;<br/>
+                    &lt;/ul&gt;<br/>
+                &lt;/nav&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li class="active"><a href="#">Data</a></li>
+                </ol>
+            </div>
+            <div class="panel panel-default">
+                &lt;ol class="breadcrumb"&gt;<br/>
+                    &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;<br/>
+                    &lt;li&gt;&lt;a href="#"&gt;Library&lt;/a&gt;&lt;/li&gt;<br/>
+                    &lt;li class="active"&gt;&lt;a href="#"&gt;Data&lt;/a&gt;&lt;/li&gt;<br/>
+                &lt;/ol&gt;<br/>
+            </div>
+        </div>
+    </div>
+    <div id="pageNav" class="container">
+        <blockquote>Page分页组件</blockquote>
+        <div class="row">
+            <div class="panel panel-default">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="panel panel-default">
+                &lt;nav aria-label="Page navigation"&gt;<br/>
+                    &lt;ul class="pagination"&gt;<br/>
+                        &lt;li&gt;&lt;a href="#" aria-label="Previous"&gt;&lt;span aria-hidden="true"&gt;&laquo;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+                        &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;<br/>
+                        &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;<br/>
+                        &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;<br/>
+                        &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;<br/>
+                        &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;<br/>
+                        &lt;li&gt;&lt;a href="#" aria-label="Next"&gt;&lt;span aria-hidden="true"&gt;&raquo;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+                    &lt;/ul&gt;<br/>
+                &lt;/nav&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <nav>
+                    <ul class="pager">
+                        <li><a href="#">Previous</a></li>
+                        <li><a href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="panel panel-default">
+                &lt;nav&gt;<br/>
+                    &lt;ul class="pager"&gt;<br/>
+                        &lt;li&gt;&lt;a href="#"&gt;Previous&lt;/a&gt;&lt;/li&gt;<br/>
+                        &lt;li&gt;&lt;a href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;<br/>
+                    &lt;/ul&gt;<br/>
+                &lt;/nav&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <nav>
+                    <ul class="pager">
+                        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span>Older</a></li>
+                        <li class="next"><a href="#">Newer<span aria-hidden="true">&rarr;</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="panel panel-default">
+                &lt;nav&gt;<br/>
+                    &lt;ul class="pager"&gt;<br/>
+                        &lt;li class="previous disabled"&gt;&lt;a href="#"&gt;&lt;span aria-hidden="true"&gt;&larr;&lt;/span&gt;Older&lt;/a&gt;&lt;/li&gt;<br/>
+                        &lt;li class="next"&gt;&lt;a href="#"&gt;Newer&lt;span aria-hidden="true"&gt;&rarr;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+                    &lt;/ul&gt;<br/>
+                &lt;/nav&gt;<br/>
+            </div>
+        </div>
+    </div>
+    <div id="span" class="container">
+        <blockquote>Span标签组件</blockquote>
+        <div class="row">
+            <div class="panel panel-default">
+                <h3>Example heading<span class="label label-default">New</span></h3>
+            </div>
+            <div class="panel panel-default">
+                &lt;h3&gt;Example heading&lt;span class="label label-default"&gt;New&lt;/span&gt;&lt;/h3&gt;
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <span class="label label-default">Default</span>
+                <span class="label label-primary">Primary</span>
+                <span class="label label-success">Success</span>
+                <span class="label label-info">Info</span>
+                <span class="label label-warning">Warning</span>
+                <span class="label label-danger">Danger</span>
+            </div>
+            <div class="panel panel-default">
+                &lt;span class="label label-default"&gt;Default&lt;/span&gt;<br/>
+                &lt;span class="label label-primary"&gt;Primary&lt;/span&gt;<br/>
+                &lt;span class="label label-success"&gt;Success&lt;/span&gt;<br/>
+                &lt;span class="label label-info"&gt;Info&lt;/span&gt;<br/>
+                &lt;span class="label label-warning"&gt;Warning&lt;/span&gt;<br/>
+                &lt;span class="label label-danger"&gt;Danger&lt;/span&gt;<br/>
+            </div>
+        </div>
+    </div>
+    <div id="messageNav" class="container">
+        <blockquote>Message消息徽章组件</blockquote>
+        <div class="row">
+            <div class="panel panel-default">
+                <a href="#">Inbox<span class="badge">42</span></a>
+                <button class="btn btn-primary" type="button">
+                    Message<span class="badge">4</span>
+                </button>
+            </div>
+            <div class="panel panel-default">
+                &lt;a href="#"&gt;Inbox&lt;span class="badge"&gt;42&lt;/span&gt;&lt;/a&gt;<br/>
+                &lt;button class="btn btn-primary" type="button"&gt;<br/>
+                    Message&lt;span class="badge"&gt;4&lt;/span&gt;<br/>
+                &lt;/button&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <ul class="nav nav-pills" role="tablist">
+                    <li role="presentation" class="active"><a href="#">Home<span class="badge">42</span></a></li>
+                    <li role="presentation"><a href="#">Profile</a></li>
+                    <li role="presentation"><a href="#">About<span class="badge">12</span></a></li>
+                </ul>
+            </div>
+            <div class="panel panel-default">
+                &lt;ul class="nav nav-pills" role="tablist"&gt;<br/>
+                    &lt;li role="presentation" class="active"&gt;&lt;a href="#"&gt;Home&lt;span class="badge"&gt;42&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+                    &lt;li role="presentation"&gt;&lt;a href="#"&gt;Profile&lt;/a&gt;&lt;/li&gt;<br/>
+                    &lt;li role="presentation"&gt;&lt;a href="#"&gt;About&lt;span class="badge"&gt;12&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+                &lt;/ul&gt;<br/>
+            </div>
+        </div>
+    </div>
+    <div id="jumbotron" class="container">
+        <blockquote>Jumbotron巨幕组件</blockquote>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="jumbotron">
+                    <h1>Hello,World!</h1>
+                    <p>This is simple hero unit,</p>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="jumbotron"&gt;<br/>
+                    &lt;h1&gt;Hello,World!&lt;/h1&gt;<br/>
+                    &lt;p&gt;This is simple hero unit,&lt;/p&gt;<br/>
+                    &lt;p&gt;&lt;a class="btn btn-primary btn-lg" href="#" role="button"&gt;Learn more&lt;/a&gt;&lt;/p&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+    </div>
+    <div id="pageHeader" class="container">
+        <blockquote>PageHeader页头</blockquote>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel-header">
+                    <h1>Example page header<small>subtext for header</small></h1>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="panel-header"&gt;<br/>
+                    &lt;h1&gt;Example page header&lt;small&gt;subtext for header&lt;/small&gt;&lt;/h1&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+    </div>
+    <div id="imgThumb" class="container">
+        <blockquote>ImageThumbnail缩略图控件</blockquote>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="thumbnail" style="wdith:180px;float:left;">
+                   <img src="images/apple.png" alt="">
+                    <h3>Thumbnail label</h3>
+                    <p>这里是图片说明部分文本</p>
+                    <p><a href="#" class="btn btn-primary">button</a><a href="#" class="btn btn-default">button</a></p>
+                </div>
+                <div class="thumbnail" style="width:180px;float:left;">
+                   <img src="images/apple.png" alt="">
+                    <h3>Thumbnail label</h3>
+                    <p>这里是图片说明部分文本</p>
+                    <p><a href="#" class="btn btn-primary">button</a><a href="#" class="btn btn-default">button</a></p>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="thumbnail"&gt;<br/>
+                   &lt;img src="images/apple.png" alt=""&gt;<br/>
+                    &lt;h3&gt;Thumbnail label&lt;/h3&gt;<br/>
+                    &lt;p&gt;这里是图片说明部分文本&lt;/p&gt;<br/>
+                    &lt;p&gt;&lt;a href="#" class="btn btn-primary"&gt;button&lt;/a&gt;&lt;a href="#" class="btn btn-default"&gt;button&lt;/a&gt;&lt;/p&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+    </div>
+    <div id="alert" class="container">
+        <blockquote>Alert警告栏组件</blockquote>
+        <div class="row">
+            <div class="panel panel-defult">
+                <div class="alert alert-success" role="alert">Better check yourself,you're not looking too good</div>
+                <div class="alert alert-info" role="alert">Better check yourself,you're not looking too good</div>
+                <div class="alert alert-warning" role="alert">Better check yourself,you're not looking too good</div>
+                <div class="alert alert-danger" role="alert">Better check yourself,you're not looking too good</div>
+            </div>
+            <div class="panel panel-defult">
+                &lt;div class="alert alert-success" role="alert"&gt;Better check yourself,you're not looking too good&lt;/div&gt;<br/>
+                &lt;div class="alert alert-info" role="alert"&gt;Better check yourself,you're not looking too good&lt;/div&gt;<br/>
+                &lt;div class="alert alert-warning" role="alert"&gt;Better check yourself,you're not looking too good&lt;/div&gt;<br/>
+                &lt;div class="alert alert-danger" role="alert"&gt;Better check yourself,you're not looking too good&lt;/div&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-defult">
+                <div class="alert alert-success" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                Better check yourself,you're not looking too good
+                </div>
+            </div>
+            <div class="panel panel-defult">
+                &lt;div class="alert alert-success" role="alert"&gt;<br/>
+                &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;&lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;&lt;/button&gt;<br/>
+                Better check yourself,you're not looking too good<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+    </div>
+    <div id="progress" class="container">
+        <blockquote>Progress进度条组件</blockquote>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                      <span class="sr-only">60% Complete</span>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="progress"&gt;<br/>
+                    &lt;div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"&gt;<br/>
+                      &lt;span class="sr-only"&gt;60% Complete&lt;/span&gt;<br/>
+                    &lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                      60%
+                    </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="progress"&gt;<br/>
+                    &lt;div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"&gt;<br/>
+                      60%<br/>
+                    &lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                      <span class="sr-only">60% Complete</span>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="progress"&gt;<br/>
+                    &lt;div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"&gt;<br/>
+                      &lt;span class="sr-only"&gt;60% Complete&lt;/span&gt;<br/>
+                    &lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                 <div class="progress">
+                    <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                      <span class="sr-only">60% Complete</span>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="progress"&gt;<br/>
+                    &lt;div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"&gt;<br/>
+                      &lt;span class="sr-only"&gt;60% Complete&lt;/span&gt;<br/>
+                    &lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                 <div class="progress">
+                    <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                      <span class="sr-only">60% Complete</span>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="progress"&gt;<br/>
+                    &lt;div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"&gt;<br/>
+                      &lt;span class="sr-only"&gt;60% Complete&lt;/span&gt;<br/>
+                    &lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success" style="width:35%">
+                    <span class="sr-only">35% Complete (Success)</span>
+                    </div>
+                    <div class="progress-bar progress-bar-warning progress-bar-striped" style="width:20%">
+                    <span class="sr-only">20% Complete (Success)</span>
+                    </div>
+                    <div class="progress-bar progress-bar-danger" style="width:10%">
+                    <span class="sr-only">10% Complete (Success)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="progress"&gt;<br/>
+                    &lt;div class="progress-bar progress-bar-success" style="width:35%"&gt;<br/>
+                    &lt;span class="sr-only"&gt;35% Complete (Success)&lt;/span&gt;<br/>
+                    &lt;/div&gt;<br/>
+                    &lt;div class="progress-bar progress-bar-warning progress-bar-striped" style="width:20%"&gt;<br/>
+                    &lt;span class="sr-only"&gt;20% Complete (Success)&lt;/span&gt;<br/>
+                    &lt;/div&gt;<br/>
+                    &lt;div class="progress-bar progress-bar-danger" style="width:10%"&gt;<br/>
+                    &lt;span class="sr-only"&gt;10% Complete (Success)&lt;/span&gt;<br/>
+                    &lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+    </div>
+    <div id="listGroup" class="container">
+        <blockquote>ListGroup列表组控件</blockquote>
+        <div class="row">
+            <div class="panel panel-default">
+                <ul class="list-group">
+                    <li class="list-group-item">Cras justo odio1</li>
+                    <li class="list-group-item list-group-item-success">Cras justo odio2</li>
+                    <li class="list-group-item list-group-item-warning">Cras justo odio3</li>
+                    <li class="list-group-item list-group-item-info">Cras justo odio4</li>
+                    <li class="list-group-item list-group-item-danger">Cras justo odio5</li>
+                </ul>
+            </div>
+            <div class="panel panel-default">
+                &lt;ul class="list-group"&gt;<br/>
+                    &lt;li class="list-group-item"&gt;Cras justo odio&lt;/li&gt;<br/>
+                    &lt;li class="list-group-item list-group-item-success"&gt;Cras justo odio&lt;/li&gt;<br/>
+                    &lt;li class="list-group-item list-group-item-warning"&gt;Cras justo odio&lt;/li&gt;<br/>
+                    &lt;li class="list-group-item list-group-item-info"&gt;Cras justo odio&lt;/li&gt;<br/>
+                    &lt;li class="list-group-item list-group-item-danger"&gt;Cras justo odio&lt;/li&gt;<br/>
+                &lt;/ul&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <ul class="list-group">
+                    <li class="list-group-item">Cras justo odio1<span class="badge">14</span></li>
+                    <li class="list-group-item list-group-item-info">Cras justo odio2<span class="badge">3</span></li>
+                    <li class="list-group-item">Cras justo odio3</li>
+                    <li class="list-group-item list-group-item-success">Cras justo odio4<span class="badge">19</span></li>
+                    <li class="list-group-item">Cras justo odio5<span class="badge">5</span></li>
+                </ul>
+            </div>
+            <div class="panel panel-default">
+                &lt;ul class="list-group"&gt;<br/>
+                    &lt;li class="list-group-item"&gt;Cras justo odio1&lt;span class="badge"&gt;14&lt;/span&gt;&lt;/li&gt;<br/>
+                    &lt;li class="list-group-item list-group-item-info"&gt;Cras justo odio2&lt;span class="badge"&gt;3&lt;/span&gt;&lt;/li&gt;<br/>
+                    &lt;li class="list-group-item"&gt;Cras justo odio3&lt;/li&gt;<br/>
+                    &lt;li class="list-group-item list-group-item-success"&gt;Cras justo odio4&lt;span class="badge"&gt;19&lt;/span&gt;&lt;/li&gt;<br/>
+                    &lt;li class="list-group-item"&gt;Cras justo odio5&lt;span class="badge"&gt;5&lt;/span&gt;&lt;/li&gt;<br/>
+                &lt;/ul&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">Morbi le risus</a>
+                    <a href="#" class="list-group-item">Morbi le risus</a>
+                    <a href="#" class="list-group-item">Morbi le risus</a>
+                    <a href="#" class="list-group-item disabled">Morbi le risus</a>
+                    <a href="#" class="list-group-item">Morbi le risus</a>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="list-group"&gt;<br/>
+                    &lt;a href="#" class="list-group-item active"&gt;Morbi le risus&lt;/a&gt;<br/>
+                    &lt;a href="#" class="list-group-item"&gt;Morbi le risus&lt;/a&gt;<br/>
+                    &lt;a href="#" class="list-group-item"&gt;Morbi le risus&lt;/a&gt;<br/>
+                    &lt;a href="#" class="list-group-item disabled"&gt;Morbi le risus&lt;/a&gt;<br/>
+                    &lt;a href="#" class="list-group-item"&gt;Morbi le risus&lt;/a&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="list-group">
+                    <button type="button" class="list-group-item">Prota ac conectertur ac1</button>
+                    <button type="button" class="list-group-item">Prota ac conectertur ac2</button>
+                    <button type="button" class="list-group-item">Prota ac conectertur ac3</button>
+                    <button type="button" class="list-group-item">Prota ac conectertur ac4</button>
+                    <button type="button" class="list-group-item">Prota ac conectertur ac5</button>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="list-group"&gt;<br/>
+                    &lt;button type="button" class="list-group-item"&gt;Prota ac conectertur ac1&lt;/button&gt;<br/>
+                    &lt;button type="button" class="list-group-item"&gt;Prota ac conectertur ac2&lt;/button&gt;<br/>
+                    &lt;button type="button" class="list-group-item"&gt;Prota ac conectertur ac3&lt;/button&gt;<br/>
+                    &lt;button type="button" class="list-group-item"&gt;Prota ac conectertur ac4&lt;/button&gt;<br/>
+                    &lt;button type="button" class="list-group-item"&gt;Prota ac conectertur ac5&lt;/button&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">
+                        <h4 class="list-group-item-heading">List group item heading</h4>
+                        <p class="list-group-item-text">Donec id ellit non mi porta gravide at eget metus.</p>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">List group item heading</h4>
+                        <p class="list-group-item-text">Donec id ellit non mi porta gravide at eget metus.</p>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">List group item heading</h4>
+                        <p class="list-group-item-text">Donec id ellit non mi porta gravide at eget metus.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="list-group"&gt;<br/>
+                    &lt;a href="#" class="list-group-item active"&gt;<br/>
+                        &lt;h4 class="list-group-item-heading"&gt;List group item heading&lt;/h4&gt;<br/>
+                        &lt;p class="list-group-item-text"&gt;Donec id ellit non mi porta gravide at eget metus.&lt;/p&gt;<br/>
+                    &lt;/a&gt;<br/>
+                    &lt;a href="#" class="list-group-item"&gt;<br/>
+                        &lt;h4 class="list-group-item-heading"&gt;List group item heading&lt;/h4&gt;<br/>
+                        &lt;p class="list-group-item-text"&gt;Donec id ellit non mi porta gravide at eget metus.&lt;/p&gt;<br/>
+                    &lt;/a&gt;<br/>
+                    &lt;a href="#" class="list-group-item"&gt;<br/>
+                        &lt;h4 class="list-group-item-heading"&gt;List group item heading&lt;/h4&gt;<br/>
+                        &lt;p class="list-group-item-text"&gt;Donec id ellit non mi porta gravide at eget metus.&lt;/p&gt;<br/>
+                    &lt;/a&gt;<br/>
+                &lt;/div&gt;<br/>
+            </div>
+        </div>
+    </div>
+    <div id="will" class="container">
+        <blockquote>Will容器组件</blockquote>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="well">Look,I'm in a well!</div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="well"&gt;Look,I'm in a well!&lt;/div&gt;
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="well well-lg">Look,I'm in a well!</div>
+            </div>
+            <div class="panel panel-default">
+                &lt;div class="well well-lg"&gt;Look,I'm in a well!&lt;/div&gt;
+            </div>
+        </div>
+    </div>
+    <div id="table" class="container">
+        <blockquote>Table表格组件</blockquote>
+        <div class="row">
+            <div class="panel panel-default">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <td>#</td>
+                            <td>FirstName</td>
+                            <td>LastName</td>
+                            <td>Username</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Larray</td>
+                            <td>the Brid</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="panel panel-default">
+                &lt;table class="table table-striped"&gt;<br/>
+                    &lt;thead&gt;<br/>
+                        &lt;tr&gt;
+                            &lt;td&gt;#&lt;/td&gt;
+                            &lt;td&gt;FirstName&lt;/td&gt;
+                            &lt;td&gt;LastName&lt;/td&gt;
+                            &lt;td&gt;Username&lt;/td&gt;
+                        &lt;/tr&gt;<br/>
+                    &lt;/thead&gt;<br/>
+                    &lt;tbody&gt;<br/>
+                        &lt;tr&gt;
+                            &lt;td&gt;1&lt;/td&gt;
+                            &lt;td&gt;Mark&lt;/td&gt;
+                            &lt;td&gt;Otto&lt;/td&gt;
+                            &lt;td&gt;@mdo&lt;/td&gt;
+                        &lt;/tr&gt;<br/>
+                        &lt;tr&gt;
+                            &lt;td&gt;2&lt;/td&gt;
+                            &lt;td&gt;Jacob&lt;/td&gt;
+                            &lt;td&gt;Thornton&lt;/td&gt;
+                            &lt;td&gt;@fat&lt;/td&gt;
+                        &lt;/tr&gt;<br/>
+                        &lt;tr&gt;
+                            &lt;td&gt;3&lt;/td&gt;
+                            &lt;td&gt;Larray&lt;/td&gt;
+                            &lt;td&gt;the Brid&lt;/td&gt;
+                            &lt;td&gt;@twitter&lt;/td&gt;
+                        &lt;/tr&gt;<br/>
+                    &lt;/tbody&gt;<br/>
+                &lt;/table&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <td>#</td>
+                            <td>FirstName</td>
+                            <td>LastName</td>
+                            <td>Username</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Larray</td>
+                            <td>the Brid</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="panel panel-default">
+                &lt;table class="table table-bordered"&gt;<br/>
+                    &lt;thead&gt;<br/>
+                        &lt;tr&gt;
+                            &lt;td&gt;#&lt;/td&gt;
+                            &lt;td&gt;FirstName&lt;/td&gt;
+                            &lt;td&gt;LastName&lt;/td&gt;
+                            &lt;td&gt;Username&lt;/td&gt;
+                        &lt;/tr&gt;<br/>
+                    &lt;/thead&gt;<br/>
+                    &lt;tbody&gt;<br/>
+                        &lt;tr&gt;
+                            &lt;td&gt;1&lt;/td&gt;
+                            &lt;td&gt;Mark&lt;/td&gt;
+                            &lt;td&gt;Otto&lt;/td&gt;
+                            &lt;td&gt;@mdo&lt;/td&gt;
+                        &lt;/tr&gt;<br/>
+                        &lt;tr&gt;
+                            &lt;td&gt;2&lt;/td&gt;
+                            &lt;td&gt;Jacob&lt;/td&gt;
+                            &lt;td&gt;Thornton&lt;/td&gt;
+                            &lt;td&gt;@fat&lt;/td&gt;
+                        &lt;/tr&gt;<br/>
+                        &lt;tr&gt;
+                            &lt;td&gt;3&lt;/td&gt;
+                            &lt;td&gt;Larray&lt;/td&gt;
+                            &lt;td&gt;the Brid&lt;/td&gt;
+                            &lt;td&gt;@twitter&lt;/td&gt;
+                        &lt;/tr&gt;<br/>
+                    &lt;/tbody&gt;<br/>
+                &lt;/table&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <td>#</td>
+                            <td>FirstName</td>
+                            <td>LastName</td>
+                            <td>Username</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Larray</td>
+                            <td>the Brid</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="panel panel-default">
+                &lt;table class="table table-hover"&gt;<br/>
+                    &lt;thead&gt;<br/>
+                        &lt;tr&gt;
+                            &lt;td&gt;#&lt;/td&gt;
+                            &lt;td&gt;FirstName&lt;/td&gt;
+                            &lt;td&gt;LastName&lt;/td&gt;
+                            &lt;td&gt;Username&lt;/td&gt;
+                        &lt;/tr&gt;<br/>
+                    &lt;/thead&gt;<br/>
+                    &lt;tbody&gt;<br/>
+                        &lt;tr&gt;
+                            &lt;td&gt;1&lt;/td&gt;
+                            &lt;td&gt;Mark&lt;/td&gt;
+                            &lt;td&gt;Otto&lt;/td&gt;
+                            &lt;td&gt;@mdo&lt;/td&gt;
+                        &lt;/tr&gt;<br/>
+                        &lt;tr&gt;
+                            &lt;td&gt;2&lt;/td&gt;
+                            &lt;td&gt;Jacob&lt;/td&gt;
+                            &lt;td&gt;Thornton&lt;/td&gt;
+                            &lt;td&gt;@fat&lt;/td&gt;
+                        &lt;/tr&gt;<br/>
+                        &lt;tr&gt;
+                            &lt;td&gt;3&lt;/td&gt;
+                            &lt;td&gt;Larray&lt;/td&gt;
+                            &lt;td&gt;the Brid&lt;/td&gt;
+                            &lt;td&gt;@twitter&lt;/td&gt;
+                        &lt;/tr&gt;<br/>
+                    &lt;/tbody&gt;<br/>
+                &lt;/table&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <td>#</td>
+                            <td>FirstName</td>
+                            <td>LastName</td>
+                            <td>Username</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="success">
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr class="info">
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr class="warning">
+                            <td>3</td>
+                            <td>Larray</td>
+                            <td>the Brid</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="panel panel-default">
+                &lt;table class="table table-striped"&gt;<br/>
+                    &lt;thead&gt;<br/>
+                        &lt;tr&gt;
+                            &lt;td&gt;#&lt;/td&gt;
+                            &lt;td&gt;FirstName&lt;/td&gt;
+                            &lt;td&gt;LastName&lt;/td&gt;
+                            &lt;td&gt;Username&lt;/td&gt;
+                        &lt;/tr&gt;<br/>
+                    &lt;/thead&gt;<br/>
+                    &lt;tbody&gt;<br/>
+                        &lt;tr class="success"&gt;
+                            &lt;td&gt;1&lt;/td&gt;
+                            &lt;td&gt;Mark&lt;/td&gt;
+                            &lt;td&gt;Otto&lt;/td&gt;
+                            &lt;td&gt;@mdo&lt;/td&gt;
+                        &lt;/tr&gt;<br/>
+                        &lt;tr class="warning"&gt;
+                            &lt;td&gt;2&lt;/td&gt;
+                            &lt;td&gt;Jacob&lt;/td&gt;
+                            &lt;td&gt;Thornton&lt;/td&gt;
+                            &lt;td&gt;@fat&lt;/td&gt;
+                        &lt;/tr&gt;<br/>
+                        &lt;tr class="danger"&gt;
+                            &lt;td&gt;3&lt;/td&gt;
+                            &lt;td&gt;Larray&lt;/td&gt;
+                            &lt;td&gt;the Brid&lt;/td&gt;
+                            &lt;td&gt;@twitter&lt;/td&gt;
+                        &lt;/tr&gt;<br/>
+                    &lt;/tbody&gt;<br/>
+                &lt;/table&gt;<br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>#</td>
+                            <td>FirstName</td>
+                            <td>LastName</td>
+                            <td>Username</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Larray</td>
+                            <td>the Brid</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="panel panel-default">
+                &lt;table class="table"&gt;<br/>
+                    &lt;thead&gt;<br/>
+                        &lt;tr&gt;
+                            &lt;td&gt;#&lt;/td&gt;
+                            &lt;td&gt;FirstName&lt;/td&gt;
+                            &lt;td&gt;LastName&lt;/td&gt;
+                            &lt;td&gt;Username&lt;/td&gt;
+                        &lt;/tr&gt;<br/>
+                    &lt;/thead&gt;<br/>
+                    &lt;tbody&gt;<br/>
+                        &lt;tr&gt;
+                            &lt;td&gt;1&lt;/td&gt;
+                            &lt;td&gt;Mark&lt;/td&gt;
+                            &lt;td&gt;Otto&lt;/td&gt;
+                            &lt;td&gt;@mdo&lt;/td&gt;
+                        &lt;/tr&gt;<br/>
+                        &lt;tr&gt;
+                            &lt;td&gt;2&lt;/td&gt;
+                            &lt;td&gt;Jacob&lt;/td&gt;
+                            &lt;td&gt;Thornton&lt;/td&gt;
+                            &lt;td&gt;@fat&lt;/td&gt;
+                        &lt;/tr&gt;<br/>
+                        &lt;tr&gt;
+                            &lt;td&gt;3&lt;/td&gt;
+                            &lt;td&gt;Larray&lt;/td&gt;
+                            &lt;td&gt;the Brid&lt;/td&gt;
+                            &lt;td&gt;@twitter&lt;/td&gt;
+                        &lt;/tr&gt;<br/>
+                    &lt;/tbody&gt;<br/>
+                &lt;/table&gt;<br/>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

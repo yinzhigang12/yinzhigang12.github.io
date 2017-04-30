@@ -1,291 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>我的个人简历</title>
-    <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css"/>
-    <link rel="stylesheet" type="text/css" href="styles/site.css"/>
+    <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="styles/site.css" />
     <!--[if lt IE 9]>
     <script src="Scripts/html5shiv.js"></script>
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="dist/js/jquery-3.2.0.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="dist/js/bootstrap.js" type="text/javascript" charset="UTF-8"></script>
+    <script>
+        $(document).ready(function() {
+            $(function() {
+                $('#introduce').modal();
+            });
+
+        });
+
+    </script>
 </head>
+
 <body>
-<ul class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a href="index.html" class="navbar-brand">
-                <span class="glyphicon glyphicon-home"></span>
-            </a>
-            <button class="navbar-toggle" data-toggle="collapse" data-target="#divNav">
+    <ul class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand">
+                    <span class="glyphicon glyphicon-home"></span>
+                </a>
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#divNav">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-        </div>
-        <div id="divNav" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="#info">基本信息</a></li>
-                <li><a href="#skill">所会技能</a></li>
-                <li><a href="#work">工作经验</a></li>
-                <li><a href="#project">项目展示</a></li>
-                <li><a href="#contact">请联系我</a></li>
-            </ul>
-        </div>
-    </div>
-</ul>
-<header class="page-header hidden-xs">
-    <h1>个人简历
-        <small>Resume online</small>
-    </h1>
-</header>
-<div class="divContent">
-    <!--基本信息-->
-    <div class="row">
-        <h2 id="info" class="lead visible-lg visible-md visible-sm">基本信息</h2>
-        <div class="col-sm-4">
-            <blockquote>
-                <h2>尹志刚</h2>
-                <footer>Web前端工程师</footer>
-            </blockquote>
-            <div class="row text-center">
-                <img src="images/boy.png" alt="boy" class="img-responsive img-circle img-thumbnail">
             </div>
-            <p></p>
-            <div class="row text-center">
-                <div class="col-sm-4">
-                    <h2><abbr title="5年工作经验">5</abbr></h2>
-                </div>
-                <div class="col-sm-4">
-                    <h2><abbr title="3个大型网站项目">3</abbr></h2>
-                </div>
-                <div class="col-sm-4">
-                    <h2><abbr title="6门相关技能">6</abbr></h2>
-                </div>
+            <div id="divNav" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#info">基本信息</a></li>
+                    <li><a href="#skill">掌握技能</a></li>
+                    <li><a href="#stud">教育培训</a> </li>
+                    <li><a href="#work">工作经验</a></li>
+                    <li><a href="#project">项目展示</a></li>
+                    <li><a href="#contact">请联系我</a></li>
+                </ul>
             </div>
         </div>
-        <div class="col-sm-8">
-            <div class="jumbotron">
-                <h2>自我评价</h2>
-                <hr/>
-                <p><kbd>5</kbd>年Web前端开发经验</p>
-                <p><kbd>3</kbd>个大型网站项目</p>
-                <p>熟练掌握<kbd>6</kbd>门相关技术，团队合作能力强</p>
-                <div class="text-right">
-                    <button class="btn btn-primary">
+    </ul>
+    <header class="page-header hidden-xs">
+        <h1>个人简历
+            <small>Resume online</small>
+        </h1>
+    </header>
+    <div class="divContent">
+        <!--基本信息-->
+        <div class="row">
+            <h2 id="info" class="lead visible-lg visible-md visible-sm">基本信息</h2>
+            <div class="col-sm-4">
+                <blockquote>
+                    <h2>尹志刚</h2>
+                    <footer>Web前端工程师</footer>
+                </blockquote>
+                <div class="row text-center">
+                    <img src="images/boy.png" alt="boy" width="75%" class="img-responsive img-circle img-thumbnail">
+                </div>
+                <p></p>
+                <div class="row text-center">
+                    <div class="col-sm-4">
+                        <h2><abbr title="5年工作经验">5</abbr></h2>
+                    </div>
+                    <div class="col-sm-4">
+                        <h2><abbr title="3个大型网站项目">3</abbr></h2>
+                    </div>
+                    <div class="col-sm-4">
+                        <h2><abbr title="6门相关技能">6</abbr></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="jumbotron">
+                    <h2>自我评价</h2>
+                    <hr/>
+                    <p><kbd>5</kbd>年Web前端开发经验</p>
+                    <p><kbd>3</kbd>个大型网站项目</p>
+                    <p>熟练掌握<kbd>6</kbd>门相关技术，团队合作能力强</p>
+                    <div class="text-right">
+                        <button id="introduce" data-toggle="modal" data-target="#modalData" class="btn btn-primary">
                         了解更多
                         <span class="glyphicon glyphicon-search"></span>
+                        
                     </button>
-                </div>
-            </div>
-            <div class="table-responsive">
-                <table class="table table-bordered table-striped table-condensed table-hover">
-                    <tr>
-                        <td>姓名</td>
-                        <td>尹志刚</td>
-                        <td>年龄</td>
-                        <td>26</td>
-                    </tr>
-                    <tr>
-                        <td>学历</td>
-                        <td>本科</td>
-                        <td>专业</td>
-                        <td>软件工程</td>
-                    </tr>
-                    <tr>
-                        <td>手机</td>
-                        <td>15017517451</td>
-                        <td>邮箱</td>
-                        <td>yingzhigang@hotmail.com</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-    <!--所会技能-->
-    <div class="row">
-        <h2 id="skill" class="lead">所会技能</h2>
-        <p>
-            <span class="label label-success">HTML5</span>
-            <span class="label label-success">CSS3</span>
-            <span class="label label-success">PhotoShop</span>
-            <span class="label label-success">jQuery</span>
-        </p>
-        <div class="progress">
-            <div class="progress-bar progress-bar-success progress-bar-striped active" style="width:40%">
-                <span>40% Complete</span>
-            </div>
-        </div>
-
-        <p>
-            <span class="label label-info">JavaScript</span>
-            <span class="label label-info">Node.js</span>
-            <span class="label label-info">DOM</span>
-            <span class="label label-info">Flash</span>
-        </p>
-        <div class="progress">
-            <div class="progress-bar progress-bar-info progress-bar-striped active" style="width:70%">
-                <span>70% Complete</span>
-            </div>
-        </div>
-
-        <p>
-            <span class="label label-warning">Angdar.js</span>
-            <span class="label label-warning">MySql</span>
-            <span class="label label-warning">MongoDB</span>
-            <span class="label label-warning">jQuery</span>
-        </p>
-        <div class="progress">
-            <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width:90%">
-                <span>90% Complete</span>
-            </div>
-        </div>
-    </div>
-    <!--工作经验-->
-    <div class="row">
-        <h2 id="work" class="lead">工作经验</h2>
-        <ul class="list-group">
-            <li class="list-group-item active">
-                <span>2016年10月——<mark>2017年1月</mark></span>
-                <span class="lead text-primary">广州乐家数字科技有限公司</span>
-                <div>Flash开发工程师
-                    <small class="text-info">负责家装三维设计软件的开发工作</small>
-                </div>
-            </li>
-            <li class="list-group-item">
-                <span>2016年7月——<mark>2016年10月</mark></span>
-                <span class="lead text-primary">动网先锋</span>
-                <div>Flash开发工程师
-                    <small class="text-info">负责战痕、武道破天等游戏项目的开发和维护工作</small>
-                </div>
-            </li>
-            <li class="list-group-item">
-                <span>2014年6月——<mark>2016年6月</mark></span>
-                <span class="lead text-primary">广州游易网络</span>
-                <div>AS3开发工程师
-                    <small class="text-info">参与公司幻想三国、幻想三国2、红警帝国、幻想三国手游版等游戏项目的开发和维护工作，负责网游海外服及手游渠道包的技术支持</small>
-                </div>
-            </li>
-            <li class="list-group-item">
-                <span>2013年6月——<mark>2014年3月</mark></span>
-                <span class="lead text-primary">上海康嘉信息技术有限公司</span>
-                <div>Flex软件工程师
-                    <small class="text-info">从事上海区交通银行数据中心项目开发任务，负责GUIP项目组的技术支持</small>
-                </div>
-            </li>
-            <li class="list-group-item">
-                <span>2012年4月——<mark>2013年1月</mark></span>
-                <span class="lead text-primary">北京超图软件有限公司</span>
-                <div>Web前端工程师
-                    <small class="text-info">从事前端页面开发及项目调研工作</small>
-                </div>
-            </li>
-        </ul>
-    </div>
-
-    <!--项目展示-->
-    <div class="row">
-        <h2 id="project" class="lead">项目展示</h2>
-        <div class="col-sm-8">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img class="img-responsive img-rounded" src="images/fruit0.png" alt="...">
-                        <div class="carousel-caption">
-                            <h3>MOOC学习平台</h3>
-                            <p>百度传课</p>
-                        </div>
                     </div>
-                    <div class="item">
-                        <img class="img-responsive img-rounded" src="images/fruit1.png" alt="...">
-                        <div class="carousel-caption">
-                            <h3>MOOC学习平台</h3>
-                            <p>达内精品在线</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img class="img-responsive img-rounded" src="images/fruit2.png" alt="...">
-                        <div class="carousel-caption">
-                            <h3 class="text-primary">WCAG</h3>
-                            <p>视频资源</p>
+                    <div class="modal" id="modalData">
+                        <div class="modal modal-header">我的职业介绍</div>
+                        <div class="modal modal-content">
+                            本人性格开朗、为人诚恳、乐观向上、兴趣广泛，具有强烈的工作责任心，有良好的沟通能力和团队合作精神、承压能力；学习能力强，优秀的逻辑思维能力与自我管理能力，拥有较强的适应能力；掌握多门软件开发的相关技术，熟练运用ActionScript3.0、Flex、ane等技术开发网页游戏及手机游戏，熟练运用HTML5、CSS3、JavaScript、JQuery等技术开发Web前端，学习过Bootstrap、AngularJS、Vue.js、Node.js、AmazeUI等主流前端框架，了解过Egret游戏引擎，熟悉客户端开发技术和流程，目前的职业定位为跨平台Web前端及H5页游开发
                         </div>
                     </div>
                 </div>
-
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-condensed table-hover">
+                        <tr>
+                            <td>姓名</td>
+                            <td>尹志刚</td>
+                            <td>年龄</td>
+                            <td>26</td>
+                            <td>籍贯</td>
+                            <td>云南楚雄</td>
+                        </tr>
+                        <tr>
+                            <td>学历</td>
+                            <td>本科</td>
+                            <td>专业</td>
+                            <td>软件工程</td>
+                            <td>QQ</td>
+                            <td>996405995</td>
+                        </tr>
+                        <tr>
+                            <td>手机</td>
+                            <td>15017517451</td>
+                            <td>邮箱</td>
+                            <td colspan="3">yingzhigang@hotmail.com</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
-        <div class="col-sm-4">
+        <!--所会技能-->
+        <div class="row">
+            <h2 id="skill" class="lead">掌握技能</h2>
             <p>
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="video/v01.mp4"></iframe>
-            </div>
+                <span class="label label-success">HTML5</span>
+                <span class="label label-success">CSS3</span>
+                <span class="label label-success">PhotoShop</span>
+                <span class="label label-success">jQuery</span>
             </p>
-            <p>
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="video/v02.mp4"></iframe>
+            <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped active" style="width:40%">
+                    <span>40% Complete</span>
+                </div>
             </div>
-            </p>
-        </div>
-    </div>
-    <!--请联系我-->
-    <div class="row">
-        <h2 id="contact" class="lead">请联系我</h2>
-        <div class="panel panel-default">
-            <div class="panel-heading">如果您对我的经历感兴趣</div>
-            <div class="panel-body">
-                <form action="index.html" method="post">
-                    <div class="form-group has-feedback has-success">
-                        <label class="control-label" for="email">Email</label>
-                        <input type="email" class="form-control" id="email">
-                        <span class="glyphicon glyphicon-ok form-control-feedback"></span>
-                    </div>
-                    <div class="form-group has-feedback has-warning">
-                        <label class="control-label" for="username">Username</label>
-                        <input type="text" class="form-control" id="username">
-                        <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
-                    </div>
-                    <div class="form-group has-feedback has-error">
-                        <label class="control-label" for="content">Content</label>
-                        <div class="input-group">
-                            <label class="input-group-addon">@</label>
-                            <input type="text" class="form-control" id="content">
-                        </div>
 
-                        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
-                    </div>
-                    <div class="btn-group pull-right">
-                        <button type="submit" class="btn btn-success">请联系我</button>
-                        <button type="reset" class="btn btn-danger">重置</button>
-                    </div>
-                </form>
+            <p>
+                <span class="label label-info">JavaScript</span>
+                <span class="label label-info">Node.js</span>
+                <span class="label label-info">DOM</span>
+                <span class="label label-info">Flash</span>
+            </p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-info progress-bar-striped active" style="width:70%">
+                    <span>70% Complete</span>
+                </div>
             </div>
-            <div class="panel-footer"></div>
+
+            <p>
+                <span class="label label-warning">Angdar.js</span>
+                <span class="label label-warning">MySql</span>
+                <span class="label label-warning">MongoDB</span>
+                <span class="label label-warning">jQuery</span>
+            </p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width:90%">
+                    <span>90% Complete</span>
+                </div>
+            </div>
+        </div>
+        <!--教育培训--->
+        <div class="row">
+            <h2 id="stud" class="lead">教育培训</h2>
+
+
+
+        </div>
+        <!--工作经验-->
+        <div class="row">
+            <h2 id="work" class="lead">工作经验</h2>
+            <ul class="list-group">
+                <li class="list-group-item active">
+                    <span>2016年10月——<mark>2017年1月</mark></span>
+                    <span class="lead text-primary">广州乐家数字科技有限公司</span>
+                    <div>Flash开发工程师
+                        <small class="text-info">负责家装三维设计软件的开发工作</small>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <span>2016年7月——<mark>2016年10月</mark></span>
+                    <span class="lead text-primary">动网先锋</span>
+                    <div>Flash开发工程师
+                        <small class="text-info">负责战痕、武道破天等游戏项目的开发和维护工作</small>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <span>2014年6月——<mark>2016年6月</mark></span>
+                    <span class="lead text-primary">广州游易网络</span>
+                    <div>AS3开发工程师
+                        <small class="text-info">参与公司幻想三国、幻想三国2、红警帝国、幻想三国手游版等游戏项目的开发和维护工作，负责网游海外服及手游渠道包的技术支持</small>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <span>2013年6月——<mark>2014年3月</mark></span>
+                    <span class="lead text-primary">上海康嘉信息技术有限公司</span>
+                    <div>Flex软件工程师
+                        <small class="text-info">从事上海区交通银行数据中心项目开发任务，负责GUIP项目组的技术支持</small>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <span>2012年4月——<mark>2013年1月</mark></span>
+                    <span class="lead text-primary">北京超图软件有限公司</span>
+                    <div>Web前端工程师
+                        <small class="text-info">从事前端页面开发及项目调研工作</small>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!--项目展示-->
+        <div class="row">
+            <h2 id="project" class="lead">项目展示</h2>
+            <div class="col-sm-8">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img class="img-responsive img-rounded" src="images/fruit0.png" alt="...">
+                            <div class="carousel-caption">
+                                <h3>MOOC学习平台</h3>
+                                <p>百度传课</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive img-rounded" src="images/fruit1.png" alt="...">
+                            <div class="carousel-caption">
+                                <h3>MOOC学习平台</h3>
+                                <p>达内精品在线</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive img-rounded" src="images/fruit2.png" alt="...">
+                            <div class="carousel-caption">
+                                <h3 class="text-primary">WCAG</h3>
+                                <p>视频资源</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="video/v01.mp4"></iframe>
+                    </div>
+                </p>
+                <p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="video/v02.mp4"></iframe>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <!--请联系我-->
+        <div class="row">
+            <h2 id="contact" class="lead">请联系我</h2>
+            <div class="panel panel-default">
+                <div class="panel-heading">如果您对我的经历感兴趣</div>
+                <div class="panel-body">
+                    <form action="index.html" method="post">
+                        <div class="form-group has-feedback has-success">
+                            <label class="control-label" for="email">Email</label>
+                            <input type="email" class="form-control" id="email">
+                            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                        </div>
+                        <div class="form-group has-feedback has-warning">
+                            <label class="control-label" for="username">Username</label>
+                            <input type="text" class="form-control" id="username">
+                            <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+                        </div>
+                        <div class="form-group has-feedback has-error">
+                            <label class="control-label" for="content">Content</label>
+                            <div class="input-group">
+                                <label class="input-group-addon">@</label>
+                                <input type="text" class="form-control" id="content">
+                            </div>
+
+                            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                        </div>
+                        <div class="btn-group pull-right">
+                            <button type="submit" class="btn btn-success">请联系我</button>
+                            <button type="reset" class="btn btn-danger">重置</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
         </div>
     </div>
-</div>
-<footer class="text-center">
-    <span>all images and contents &copy; 2017</span>
-</footer>
-<script src="dist/js/jquery-3.2.0.js" type="text/javascript" charset="UTF-8"></script>
-<script src="dist/js/bootstrap.js" type="text/javascript" charset="UTF-8"></script>
+    <footer class="text-center">
+        <span>all images and contents &copy; 2017</span>
+    </footer>
+
 </body>
+
 </html>
