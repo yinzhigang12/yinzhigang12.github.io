@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<head lang="zh-cn">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Amaze UI React组件预览</title>
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="alternate icon" type="image/png" href="i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">
+    <meta name="apple-mobile-web-app-title" content="AMUI React"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+
+    <script src="assets/js/react.min.js"></script>
+    <script src="assets/js/react-dom.min.js"></script>
+    <script src="assets/js/amazeui.react.min.js"></script>
+
+    <script src="dist/js/jquery-3.2.0.js"></script>
+    <script src="dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <script type="text/babel">
+        var React = require('react');
+        var ReactDOM = require('react-dom');
+        var AMUIReact = require('amazui-react');
+        var Button = AMUIReact.Button;
+
+        ReactDOM.render(<Button>Button</Button>, mountNode);
+    </script>
+    <style type="text/css">
+        body {
+            font-family: "微软雅黑";
+            margin: auto;
+            width: 1200px;
+            font-size: 0.9em;
+        }
+
+        .am-panel-default {
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+<header class="am-topbar am-topbar-inverse am-topbar-fixed-top">
+    <h1 class="am-topbar-brand">
+        <a href="#">Amaze UI</a>
+    </h1>
+    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only"
+            data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span
+            class="am-icon-bars"></span></button>
+    <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+        <ul class="am-nav am-nav-pills am-topbar-nav">
+            <li class="am-active"><a href="#">首页</a></li>
+            <li class="am-dropdown" data-am-dropdown>
+                <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+                    React组件 <span class="am-icon-caret-down"></span>
+                </a>
+                <ul class="am-dropdown-content">
+                    <!--<li class="am-dropdown-header">标题</li>-->
+                    <li><a href="#">1. 去月球</a></li>
+                </ul>
+            </li>
+        </ul>
+        <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
+            <div class="am-form-group">
+                <input type="text" class="am-form-field am-input-sm" placeholder="搜索">
+            </div>
+        </form>
+    </div>
+</header>
+
+<div id="grid-add" class="am-container">
+    <legend>环境配置</legend>
+    <div class="am-g">
+        &lt;link rel="stylesheet" href="assets/css/amazeui.min.css"&gt;<br/>
+        &lt;link rel="stylesheet" href="assets/css/app.css"&gt;<br/>
+
+        &lt;script src="assets/js/react.min.js"&gt;&lt;/script&gt;<br/>
+        &lt;script src="assets/js/react-dom.min.js"&gt;&lt;/script&gt;<br/>
+        &lt;script src="assets/js/amazeui.react.min.js"&gt;&lt;/script&gt;<br/>
+        &lt;script type="text/babel"&gt;<br/>
+        var React = require('react');<br/>
+        var ReactDOM = require('react-dom');<br/>
+        var AMUIReact = require('amazui-react');<br/>
+        var Button = AMUIReact.Button;<br/>
+
+        ReactDOM.render(&lt;Button&gt;Button&lt;/Button&gt;,mountNode);<br/>
+        &lt;/script&gt;<br/>
+    </div>
+</div>
+
+<div id="grid-ret" class="am-container">
+    <legend>Grid网格</legend>
+    <div class="row">
+        <div class="am-panel am-panel-default">
+            <script type="text/babel">
+                var gridInstance = (
+                        <Grid className="doc-g">
+                            <Col sm={4}>4</Col>
+                            <Col sm={8}>8</Col>
+                        </Grid>
+                );
+                ReactDOM.render(gridInstance, mountNode);
+            </script>
+        </div>
+        <div class="am-panel am-panel-default">
+            &lt;script type="text/babel"&gt;<br/>
+            var gridInstance=(<br/>
+            &lt;Grid className="doc-g"&gt;<br/>
+            &lt;Col sm={4}&gt;4&lt;/Col&gt;<br/>
+            &lt;Col sm={8}&gt;8&lt;/Col&gt;<br/>
+            &lt;/Grid&gt;<br/>
+            );<br/>
+            ReactDOM.render(gridInstance,mountNode);<br/>
+            &lt;/script&gt;<br/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="am-panel am-panel-default">
+            <script type="text/babel">
+                var gridInstance = (
+                        <Grid className="doc-g">
+                            <Col sm={12} md={5} lg={4}>sm-12 md-5 lg-4</Col>
+                            <Col sm={12} md={7} lg={8}>sm-12 md-7 lg-8</Col>
+                        </Grid>
+                );
+
+                ReactDOM.render(gridInstance, mountNode);
+            </script>
+        </div>
+        <div class="am-panel am-panel-default">
+            &lt;script type="text/babel"&gt;<br/>
+            var gridInstance = (<br/>
+            &lt;Grid className="doc-g"&gt;<br/>
+            &lt;Col sm={12} md={5} lg={4}&gt;sm-12 md-5 lg-4&lt;/Col&gt;<br/>
+            &lt;Col sm={12} md={7} lg={8}&gt;sm-12 md-7 lg-8&lt;/Col&gt;<br/>
+            &lt;/Grid&gt;<br/>
+            );<br/>
+
+            ReactDOM.render(gridInstance, mountNode);<br/>
+            &lt;/script&gt;<br/>
+        </div>
+    </div>
+    <div class="am-g">
+        <div class="am-panel am-panel-default am-g-6">
+            <script>
+                var gridInstance = (
+                    < Grid
+                fixed
+                className = "doc-g" >
+                    < Col
+                sm = {4} > 4 < /Col>
+                    < Col
+                sm = {8} > 8 < /Col>
+                    < /Grid>
+                )
+                ;
+
+                ReactDOM.render(gridInstance, mountNode);
+            </script>
+        </div>
+        <div class="am-panel am-panel-default am-g-6">
+            <script>
+                var gridInstance = (
+                    < Grid
+                fixed
+                className = "doc-g" >
+                    < Col
+                sm = {4} > 4 < /Col>
+                    < Col
+                sm = {8} > 8 < /Col>
+                    < /Grid>
+                )
+                ;
+
+                ReactDOM.render(gridInstance, mountNode);
+            </script>
+        </div>
+    </div>
+    <div class="am-g">
+        <div class="am-panel am-panel-default am-g-6">
+            <script>
+                var gridInstance = (
+                    < div >
+                    {/* 全宽的列可以使用容器，不需要的网格嵌套 */}
+                    < Container > 我是一个容器里的内容 < /Container>
+
+                {/* 当然，这样写也没问题 */
+                }
+                <
+                Grid
+                fixed
+                className = "doc-g" >
+                    < Col
+                sm = {12} > full
+                width
+                col < /Col>
+                < /Grid>
+                < /div>
+
+                )
+                ;
+
+                ReactDOM.render(gridInstance, mountNode);
+            </script>
+        </div>
+        <div class="am-panel am-panel-default am-g-6">
+            <script>
+                var gridInstance = (
+                    < div >
+                    {/* 全宽的列可以使用容器，不需要的网格嵌套 */}
+                    < Container > 我是一个容器里的内容 < /Container>
+
+                {/* 当然，这样写也没问题 */
+                }
+                <
+                Grid
+                fixed
+                className = "doc-g" >
+                    < Col
+                sm = {12} > full
+                width
+                col < /Col>
+                < /Grid>
+                < /div>
+
+                )
+                ;
+
+                ReactDOM.render(gridInstance, mountNode);
+            </script>
+        </div>
+    </div>
+    <div class="am-g">
+        <div class="am-panel am-panel-default am-g-6">
+            <script>
+                var gridInstance = (
+                    < div >
+                    {/* 每一行使用一个 Grid，方便控制每行的样式 */}
+                    < h4 > 每行一个
+                Grid < /h4>
+                < Grid
+                className = "doc-g" >
+                    < Col
+                sm = {6} > 6 < /Col>
+                    < Col
+                sm = {6} > 6 < /Col>
+                    < /Grid>
+
+                    < Grid
+                className = "doc-g" >
+                    < Col
+                sm = {6} > 6 < /Col>
+                    < Col
+                sm = {6} > 6 < /Col>
+                    < /Grid>
+
+                {/* 当然，这样写也没问题 */
+                }
+                <
+                h4 > 多行嵌套在一个
+                Grid
+                里 < /h4>
+                < Grid
+                className = "doc-g" >
+                    < Col
+                sm = {6} > 6 < /Col>
+                    < Col
+                sm = {6} > 6 < /Col>
+
+                    < Col
+                sm = {6} > 6 < /Col>
+                    < Col
+                sm = {6} > 6 < /Col>
+                    < /Grid>
+                    < /div>
+                )
+                ;
+
+                ReactDOM.render(gridInstance, mountNode);
+
+            </script>
+        </div>
+        <div class="am-panel am-panel-default am-g-6">
+            <script>
+                var gridInstance = (
+                    < div >
+                    {/* 每一行使用一个 Grid，方便控制每行的样式 */}
+                    < h4 > 每行一个
+                Grid < /h4>
+                < Grid
+                className = "doc-g" >
+                    < Col
+                sm = {6} > 6 < /Col>
+                    < Col
+                sm = {6} > 6 < /Col>
+                    < /Grid>
+
+                    < Grid
+                className = "doc-g" >
+                    < Col
+                sm = {6} > 6 < /Col>
+                    < Col
+                sm = {6} > 6 < /Col>
+                    < /Grid>
+
+                {/* 当然，这样写也没问题 */
+                }
+                <
+                h4 > 多行嵌套在一个
+                Grid
+                里 < /h4>
+                < Grid
+                className = "doc-g" >
+                    < Col
+                sm = {6} > 6 < /Col>
+                    < Col
+                sm = {6} > 6 < /Col>
+
+                    < Col
+                sm = {6} > 6 < /Col>
+                    < Col
+                sm = {6} > 6 < /Col>
+                    < /Grid>
+                    < /div>
+                )
+                ;
+
+                ReactDOM.render(gridInstance, mountNode);
+
+            </script>
+        </div>
+    </div>
+</div>
+
+<div id="btn-react" class="am-container">
+    <legend>Button组件</legend>
+    <div class="am-g">
+        <div class="am-panel am-panel-default am-g-6">
+            <script type="text/babel">
+                var buttonsInstance = (
+                        <ButtonToolbar>
+                            <Button>Default</Button>
+                            <Button amStyle="primary">Primary</Button>
+                            <Button amStyle="secondary">Secondary</Button>
+                            <Button amStyle="success">Success</Button>
+                            <Button amStyle="warning">Warning</Button>
+                            <Button amStyle="danger">Danger</Button>
+                            <Button amStyle="link">Link</Button>
+                        </ButtonToolbar>
+                );
+                ReactDOM.render(buttonsInstance, document.getElementById(mountNode));
+            </script>
+            <div id="mountNode"></div>
+        </div>
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+    </div>
+    <div class="am-g">
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+    </div>
+    <div class="am-g">
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+    </div>
+    <div class="am-g">
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+    </div>
+    <div class="am-g">
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+    </div>
+    <div class="am-g">
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+    </div>
+    <div class="am-g">
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+    </div>
+    <div class="am-g">
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+    </div>
+    <div class="am-g">
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+    </div>
+</div>
+
+<div id="" class="am-container">
+    <legend>Grid网格</legend>
+    <div class="am-g">
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+    </div>
+    <div class="am-g">
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+    </div>
+    <div class="am-g">
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+    </div>
+    <div class="am-g">
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+    </div>
+    <div class="am-g">
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+    </div>
+</div>
+
+<div id="" class="am-container">
+    <legend>Grid网格</legend>
+    <div class="am-g">
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+    </div>
+    <div class="am-g">
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+    </div>
+    <div class="am-g">
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+    </div>
+    <div class="am-g">
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+    </div>
+    <div class="am-g">
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+        <div class="am-panel am-panel-default am-g-6">
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

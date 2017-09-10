@@ -53,7 +53,7 @@
             width: 1000px;
         }
 
-        #form .am-panel, #btn .am-panel, #image .am-panel, #badge .am-panel, #breadcrumb .am-panel, #button-group .am-panel, #close .am-panel, #comment .am-panel,
+        #grid .am-panel, #form .am-panel, #btn .am-panel, #image .am-panel, #badge .am-panel, #breadcrumb .am-panel, #button-group .am-panel, #close .am-panel, #comment .am-panel,
         #icon .am-panel, #input-group .am-panel, #list .am-panel, #nav .am-panel, #topbar .am-panel, #pagination .am-panel, #panel .am-panel, #progress .am-panel,
         #thumbnail .am-panel, #animation .am-panel, #article .am-panel, #table .am-panel,
         #alertjs .am-panel, #buttonjs .am-panel, #collapsejs .am-panel, #dropdownjs .am-panel, #modaljs .am-panel, #popoverjs .am-panel, #nprogressjs .am-panel,
@@ -62,7 +62,7 @@
         #accordion-web .am-panel, #divider-web .am-panel, #figure-web .am-panel, #footer-web .am-panel, #gallery-web .am-panel, #gotop-web .am-panel, #header-web .am-panel,
         #intro-web .am-panel, #list-web .am-panel, #menu-web .am-panel, #navbar-web .am-panel, #pagination-web .am-panel, #pargraph-web .am-panel, #slider-web .am-panel,
         #tabs-web .am-panel, #titlebar-web .am-panel, #duoshuo-web .am-panel, #map-web .am-panel, #mechat-web .am-panel, #wechat-pay-web .am-panel {
-            width: 540px;
+            width: 550px;
         }
 
         .doc-icon-custom {
@@ -327,6 +327,216 @@
         </div>
         <div class="am-panel-footer">
             Panel footer
+        </div>
+    </div>
+</div>
+
+<div id="grid" class="container">
+    <legend>Grid网格</legend>
+    <div class="row">
+        <div class="am-panel am-panel-default">
+            <div class="am-g">
+                <div class="am-u-sm-4" style="border:1px solid red;">4</div>
+                <div class="am-u-sm-8" style="border:1px solid red;">8</div>
+            </div
+        </div>
+        <div class="am-panel am-panel-default ">
+            &lt;div class="am-g"&gt;<br/>
+            &lt;div class="am-u-sm-4"&gt;4&lt;/div&gt;<br/>
+            &lt;div class="am-u-sm-8"&gt;8&lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="am-panel am-panel-default">
+            <div class="am-g doc-am-g">
+                <div class="am-u-sm-6 am-u-md-4 am-u-lg-3" style="border:1px solid red;">sm-6 md-4 lg-3</div>
+                <div class="am-u-sm-6 am-u-md-8 am-u-lg-9" style="border:1px solid red;">sm-6 md-8 lg-9</div>
+            </div>
+        </div>
+        <div class="am-panel am-panel-default">
+            &lt;div class="am-g doc-am-g"&gt;<br/>
+            &lt;div class="am-u-sm-6 am-u-md-4 am-u-lg-3"&gt;sm-6 md-4 lg-3&lt;/div&gt;<br/>
+            &lt;div class="am-u-sm-6 am-u-md-8 am-u-lg-9"&gt;sm-6 md-8 lg-9&lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="am-panel am-panel-default">
+            <div class="am-container" style="border:1px solid red;">
+                I'm in the .am-container.
+            </div>
+
+            <!--网格行限制宽度-->
+            <div class="am-g am-g-fixed">
+                <div class="am-u-sm-6" style="border:1px solid red;">.am-u-sm-6</div>
+                <div class="am-u-sm-6" style="border:1px solid red;">.am-u-sm-6</div>
+            </div>
+
+            <!--当然，如果你觉得嵌套一层也无所谓的话，这样用也可以-->
+            <div class="am-container">
+                <div class="am-g">
+                    <div class="am-u-sm-6" style="border:1px solid red;">.am-u-sm-6</div>
+                    <div class="am-u-sm-6" style="border:1px solid red;">.am-u-sm-6</div>
+                </div>
+            </div>
+        </div>
+        <div class="am-panel am-panel-default">
+            &lt;div class="am-container"&gt;<br/>
+            I'm in the .am-container.<br/>
+            &lt;/div&gt;<br/>
+
+            &lt;!--网格行限制宽度--&gt;<br/>
+            &lt;div class="am-g am-g-fixed"&gt;<br/>
+            &lt;div class="am-u-sm-6"&gt;.am-u-sm-6&lt;/div&gt;<br/>
+            &lt;div class="am-u-sm-6"&gt;.am-u-sm-6&lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+
+            &lt;!--当然，如果你觉得嵌套一层也无所谓的话，这样用也可以--&gt;<br/>
+            &lt;div class="am-container"&gt;<br/>
+            &lt;div class="am-g"&gt;<br/>
+            &lt;div class="am-u-sm-6"&gt;.am-u-sm-6&lt;/div&gt;<br/>
+            &lt;div class="am-u-sm-6"&gt;.am-u-sm-6&lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="am-panel am-panel-default">
+            <ul class="am-avg-sm-3 boxes">
+                <li class="box box-1">1</li>
+                <li class="box box-2">2</li>
+                <li class="box box-3">3</li>
+                <li class="box box-4">4</li>
+                <li class="box box-5">5</li>
+                <li class="box box-6">6</li>
+                <li class="box box-7">7</li>
+                <li class="box box-8">8</li>
+                <li class="box box-9">9</li>
+            </ul>
+            <style>
+                .boxes {
+                    width: 300px;
+                }
+
+                .boxes .box {
+                    height: 100px;
+                    color: #eee;
+                    line-height: 100px;
+                    text-align: center;
+                    font-weight: bold;
+                    transition: all .2s ease;
+                }
+
+                .boxes .box:hover {
+                    font-size: 250%;
+                    transform: rotate(360deg);
+                }
+
+                .box-1 {
+                    background-color: red;
+                }
+
+                .box-2 {
+                    background-color: orange;
+                }
+
+                .box-3 {
+                    background-color: #0000ff;
+                }
+
+                .box-4 {
+                    background-color: #008000;
+                }
+
+                .box-5 {
+                    background-color: red;
+                }
+
+                .box-6 {
+                    background-color: orange;
+                }
+
+                .box-7 {
+                    background-color: #0000ff;
+                }
+
+                .box-8 {
+                    background-color: #008000;
+                }
+
+                .box-9 {
+                    background-color: red;
+                }
+            </style>
+        </div>
+        <div class="am-panel am-panel-default">
+            &lt;ul class="am-avg-sm-3 boxes"&gt;<br/>
+            &lt;li class="box box-1"&gt;1&lt;/li&gt;<br/>
+            &lt;li class="box box-2"&gt;2&lt;/li&gt;<br/>
+            &lt;li class="box box-3"&gt;3&lt;/li&gt;<br/>
+            &lt;li class="box box-4"&gt;4&lt;/li&gt;<br/>
+            &lt;li class="box box-5"&gt;5&lt;/li&gt;<br/>
+            &lt;li class="box box-6"&gt;6&lt;/li&gt;<br/>
+            &lt;li class="box box-7"&gt;7&lt;/li&gt;<br/>
+            &lt;li class="box box-8"&gt;8&lt;/li&gt;<br/>
+            &lt;li class="box box-9"&gt;9&lt;/li&gt;<br/>
+            &lt;/ul&gt;<br/>
+            &lt;style&gt;<br/>
+            .boxes {<br/>
+            width: 300px;<br/>
+            }<br/>
+
+            .boxes .box {<br/>
+            height: 100px;<br/>
+            color: #eee;<br/>
+            line-height: 100px;<br/>
+            text-align: center;<br/>
+            font-weight: bold;<br/>
+            transition: all .2s ease;<br/>
+            }<br/>
+
+            .boxes .box:hover {<br/>
+            font-size: 250%;<br/>
+            transform: rotate(360deg);<br/>
+            }<br/>
+
+            .box-1 {<br/>
+            background-color: red;<br/>
+            }<br/>
+
+            .box-2 {<br/>
+            background-color: orange;<br/>
+            }<br/>
+
+            .box-3 {<br/>
+            background-color: #0000ff;<br/>
+            }<br/>
+
+            .box-4 {<br/>
+            background-color: #008000;<br/>
+            }<br/>
+
+            .box-5 {<br/>
+            background-color: red;<br/>
+            }<br/>
+
+            .box-6 {<br/>
+            background-color: orange;<br/>
+            }<br/>
+
+            .box-7 {<br/>
+            background-color: #0000ff;<br/>
+            }<br/>
+
+            .box-8 {<br/>
+            background-color: #008000;<br/>
+            }<br/>
+
+            .box-9 {<br/>
+            background-color: red;<br/>
+            }<br/>
+            &lt;/style&gt;<br/>
         </div>
     </div>
 </div>
