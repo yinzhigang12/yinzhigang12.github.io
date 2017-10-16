@@ -21,7 +21,9 @@
 //            });
 //
 //        });
-
+function onCloseModal() {
+    modalData.close();
+}
     </script>
 </head>
 
@@ -74,7 +76,7 @@
             <div class="col-sm-4">
                 <blockquote>
                     <h2>尹志刚</h2>
-                    <footer>Web前端工程师</footer>
+                    <footer>JavaWeb开发工程师</footer>
                 </blockquote>
                 <div class="row text-center">
                     <img src="images/boy.png" alt="boy" width="75%" class="img-responsive img-circle img-thumbnail">
@@ -96,7 +98,8 @@
                 <div class="jumbotron">
                     <h2>自我评价</h2>
                     <hr/>
-                    <p><kbd>5</kbd>年Web前端开发经验</p>
+                    <p><kbd>4</kbd>年AS3前端开发经验</p>
+                    <p><kbd>1</kbd>年Web前端开发经验</p>
                     <p><kbd>3</kbd>个大型网站项目</p>
                     <p>熟练掌握<kbd>6</kbd>门相关技术，团队合作能力强</p>
                     <div class="text-right">
@@ -107,17 +110,19 @@
                     </button>
                     </div>
                     <div class="modal" id="modalData">
-                        <div class="modal modal-header">我的职业介绍</div>
-                        <!--<div class="modal modal-content">-->
-                            <!--本人性格开朗、为人诚恳、乐观向上、兴趣广泛，具有强烈的工作责任心，有良好的沟通能力和团队合作精神、承压能力；学习能力强，优秀的逻辑思维能力与自我管理能力，拥有较强的适应能力；掌握多门软件开发的相关技术，熟练运用ActionScript3.0、Flex、ane等技术开发网页游戏及手机游戏，熟练运用HTML5、CSS3、JavaScript、JQuery等技术开发Web前端，学习过Bootstrap、AngularJS、Vue.js、Node.js、AmazeUI等主流前端框架，了解过Egret游戏引擎，熟悉客户端开发技术和流程，目前的职业定位为跨平台Web前端及H5页游开发-->
-                        <!--</div>-->
+                        <div class="alert alert-success" role="alert"
+                             style="width:60%;margin-top: 400px;margin-left:400px;text-size:2em;">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"
+                                    onclick="onCloseModal()"><span aria-hidden="true">×</span></button>
+                            本人性格开朗、为人诚恳、乐观向上、兴趣广泛，具有强烈的工作责任心，有良好的沟通能力和团队合作精神、承压能力；学习能力强，优秀的逻辑思维能力与自我管理能力，拥有较强的适应能力及工作能力，熟悉软件开发的工作流程；掌握多门软件开发的相关技术，熟练运用ActionScript3.0、Flex、ane等技术开发网页游戏及手机游戏，熟练运用HTML5、CSS3、JavaScript、JQuery等技术从事Web前端开发及使用SSM框架从事后端开发，熟悉互联网开发技术和流程，热衷于了解IT最新发展动态及学习接受互联网前沿技术
+                        </div>
                     </div>
                 </div>
                 <div class="table-responsive">
                     <table class="table table-bordered table-striped table-condensed table-hover">
                         <tr>
                             <td>姓名</td>
-                            <td>尹志刚</td>
+                            <td width="25%">尹志刚</td>
                             <td>年龄</td>
                             <td>26</td>
                             <td>籍贯</td>
@@ -147,43 +152,84 @@
             <p>
                 <span class="label label-success">HTML5</span>
                 <span class="label label-success">CSS3</span>
-                <span class="label label-success">PhotoShop</span>
+                <span class="label label-success">JavaScript</span>
                 <span class="label label-success">jQuery</span>
+                <span class="label label-success">AS3</span>
             </p>
             <div class="progress">
-                <div class="progress-bar progress-bar-success progress-bar-striped active" style="width:60%">
-                    <span>60% Complete</span>
+                <div class="progress-bar progress-bar-success progress-bar-striped active" style="width:90%">
+                    <span>90% Complete</span>
                 </div>
             </div>
 
             <p>
-                <span class="label label-info">JavaScript</span>
-                <span class="label label-info">Node.js</span>
-                <span class="label label-info">DOM</span>
-                <span class="label label-info">Flash</span>
+                <span class="label label-info">Egret</span>
+                <span class="label label-info">LayaBox</span>
+                <span class="label label-info">VueJs</span>
+                <span class="label label-info">Bootstrap</span>
+                <span class="label label-info">AngularJS</span>
             </p>
             <div class="progress">
-                <div class="progress-bar progress-bar-info progress-bar-striped active" style="width:70%">
-                    <span>70% Complete</span>
+                <div class="progress-bar progress-bar-info progress-bar-striped active" style="width:75%">
+                    <span>75% Complete</span>
                 </div>
             </div>
 
             <p>
-                <span class="label label-warning">Angdar.js</span>
+                <span class="label label-warning">PHP</span>
                 <span class="label label-warning">MySql</span>
                 <span class="label label-warning">MongoDB</span>
-                <span class="label label-warning">jQuery</span>
+                <span class="label label-warning">Java</span>
             </p>
             <div class="progress">
-                <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width:90%">
-                    <span>90% Complete</span>
+                <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width:60%">
+                    <span>60% Complete</span>
                 </div>
             </div>
         </div>
         <!--教育培训--->
         <div class="row">
             <h2 id="stud" class="lead">教育培训</h2>
-
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <span>2009年8月——<mark>2013年6月</mark></span>
+                    <span class="lead text-primary">北京化工大学北方学院</span>
+                    <div>软件工程
+                        <small class="text-info">在校期间通过学习具备了良好的科学素养，系统地、较好地学习科学与技术包括计算机硬件、软件与应用的基本理论、基本知识和基本技能与方法。
+                        </small>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <span>2017年8月——<mark>至今</mark></span>
+                    <span class="lead text-primary">昆明阿甲科技</span>
+                    <div>Java框架
+                        <small class="text-info">
+                            巩固了HTML、JavaWeb、JSP、JavaScript、JQuery等前端开发技术，深入学了Maven、Mybatis、Spring、SpringMVC等服务端相关框架，熟练运用目前主流技术开发跨平台Web应用
+                        </small>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <span>2017年3月——<mark>2017年4月</mark></span>
+                    <span class="lead text-primary">传智播客</span>
+                    <div>Web前端框架
+                        <small class="text-info">系统学习了主流的Bootstrap、AngularJS、VueJS、JQuery、CSS3等前端开发技术</small>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <span>2012年10月——<mark>2013年3月</mark></span>
+                    <span class="lead text-primary">北京文启领航教育</span>
+                    <div>AS3、Flex开发
+                        <small class="text-info">系统学习了ActionScript3.0、Flex、FlexArcGis等技术，熟练运用Flex、AS3技术开发网页游戏</small>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <span>2011年9月——<mark>2012年3月</mark></span>
+                    <span class="lead text-primary">无锡清华紫光教育</span>
+                    <div>JavaWeb开发
+                        <small class="text-info">系统学习HTML、JavaWeb、JSP、JavaScript、JQuery、SSH等开发技术，熟练掌握Web开发相关技能</small>
+                    </div>
+                </li>
+            </ul>
 
 
         </div>
@@ -191,15 +237,17 @@
         <div class="row">
             <h2 id="work" class="lead">工作经验</h2>
             <ul class="list-group">
-                <li class="list-group-item active">
-                    <span>2017年1月——<mark>2017年7月</mark></span>
+                <li class="list-group-item">
+                    <span>2017年3月——<mark>2017年7月</mark></span>
                     <span class="lead text-primary">广州星辉天拓互动娱乐有限公司</span>
                     <div>H5开发工程师
-                        <small class="text-info">负责思美人游戏前端开发工作</small>
+                        <small class="text-info">使用LayaBox游戏引擎，参与开发思美人游戏项目，负责游戏前端的背包系统、邮件系统、战斗系统和任务系统的开发，熟练使用Google
+                            Chrome debug进行代码调试
+                        </small>
                     </div>
                 </li>
                 <li class="list-group-item">
-                    <span>2016年7月——<mark>2016年12月</mark></span>
+                    <span>2016年7月——<mark>2016年11月</mark></span>
                     <span class="lead text-primary">广州动网先锋</span>
                     <div>Flash开发工程师
                         <small class="text-info">负责战痕、武道破天等游戏项目的开发和维护工作</small>
@@ -223,7 +271,7 @@
                     <span>2012年4月——<mark>2013年1月</mark></span>
                     <span class="lead text-primary">北京超图软件有限公司</span>
                     <div>Web前端工程师
-                        <small class="text-info">从事前端页面开发及项目调研工作</small>
+                        <small class="text-info">从事Web前端页面开发及项目调研工作，参与了智慧颐和园、中关村科技园等门户网站的搭建及朝阳区发改委的数据分析等工作</small>
                     </div>
                 </li>
             </ul>
@@ -232,7 +280,7 @@
         <!--项目展示-->
         <div class="row">
             <h2 id="project" class="lead">项目展示</h2>
-            <div class="col-sm-8">
+            <div class="col-sm-12">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
@@ -277,7 +325,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <!--<div class="col-sm-4">
                 <p>
                     <div class="embed-responsive embed-responsive-16by9">
 
@@ -288,7 +336,7 @@
 
                     </div>
                 </p>
-            </div>
+            </div>-->
         </div>
         <!--请联系我-->
         <div class="row">
