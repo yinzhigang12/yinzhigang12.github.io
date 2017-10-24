@@ -73,6 +73,42 @@
         </button>
         <button type="button" class="mui-btn mui-btn-block mui-btn-primary">确认</button>
     </div>
+
+    <div class="mui-card">
+        &lt;div class="mui-content-padded"&gt;<br/>
+        &lt;p style="margin-bottom: 25px;"&gt;当用户点击按钮后，需要向服务端提交数据或等待服务端响应时，
+        常常需要提示“正在提交”，并将按钮设置为disabled，避免用户重复点击、重复提交；
+        mui的加载中按钮就实现了类似效果，点击如下按钮体验：&lt;/p&gt;<br/>
+        &lt;h5&gt;左侧loading图标：&lt;/h5&gt;<br/>
+        &lt;button type="button" class="mui-btn mui-btn-primary"&gt;确认&lt;/button&gt;<br/>
+        &lt;h5&gt;右侧loading图标：&lt;/h5&gt;<br/>
+        &lt;button type="button" class="mui-btn mui-btn-primary" data-loading-text="提交中"
+        data-loading-icon-position="right"&gt;确认<br/>
+        &lt;/button&gt;<br/>
+        &lt;h5&gt;无loading图标：&lt;/h5&gt;<br/>
+        &lt;button type="button" class="mui-btn mui-btn-primary" data-loading-icon=""&gt;确认&lt;/button&gt;<br/>
+        &lt;h5&gt;自定义loading图标：&lt;/h5&gt;<br/>
+        &lt;button type="button" class="mui-btn mui-btn-primary" data-loading-icon="mui-spinner mui-spinner-custom"&gt;确认
+        &lt;/button&gt;<br/>
+        &lt;h5&gt;其他button效果&lt;/h5&gt;<br/>
+        &lt;button type="button" class="mui-btn"&gt;确认&lt;/button&gt;<br/>
+        &lt;button type="button" class="mui-btn mui-btn-outlined mui-btn-primary"&gt;确认&lt;/button&gt;<br/>
+        &lt;button type="button" class="mui-btn mui-btn-primary"&gt;确认 &lt;span class="mui-badge mui-badge-primary"&gt;2&lt;/span&gt;<br/>
+        &lt;/button&gt;<br/>
+        &lt;button type="button" class="mui-btn mui-btn-block mui-btn-primary"&gt;确认&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;script&gt;<br/>
+        mui.init({<br/>
+        swipeBack: true //启用右滑关闭功能<br/>
+        });<br/>
+        mui(document.body).on('tap', '.mui-btn', function (e) {<br/>
+        mui(this).button('loading');<br/>
+        setTimeout(function () {<br/>
+        mui(this).button('reset');<br/>
+        }.bind(this), 2000);<br/>
+        });<br/>
+        &lt;/script&gt;<br/>
+    </div>
 </div>
 </body>
 <script src="../js/mui.min.js"></script>

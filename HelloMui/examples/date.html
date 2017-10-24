@@ -40,6 +40,57 @@
         <button id='pickTimeBtn' type="button" class="mui-btn mui-btn-block">选择时间</button>
         <div id="info"></div>
     </div>
+
+    <div class="mui-card">
+        &lt;div class="mui-content-padded"&gt;<br/>
+        &lt;h5 class="mui-content-padded"&gt;日期示例&lt;/h5&gt;<br/>
+        &lt;button id='pickDateBtn' type="button" class="mui-btn mui-btn-block"&gt;选择日期&lt;/button&gt;<br/>
+        &lt;h5 class="mui-content-padded"&gt;时间示例&lt;/h5&gt;<br/>
+        &lt;button id='pickTimeBtn' type="button" class="mui-btn mui-btn-block"&gt;选择时间&lt;/button&gt;<br/>
+        &lt;div id="info"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;script type="text/javascript" charset="utf-8"&gt;<br/>
+        //mui初始化<br/>
+        mui.init({<br/>
+        swipeBack: true //启用右滑关闭功能<br/>
+        });<br/>
+        var info = document.getElementById("info");<br/>
+
+        document.getElementById("pickDateBtn").addEventListener('tap', function () {<br/>
+        var dDate = new Date();<br/>
+        dDate.setFullYear(2014, 7, 16);<br/>
+        var minDate = new Date();<br/>
+        minDate.setFullYear(2010, 0, 1);<br/>
+        var maxDate = new Date();<br/>
+        maxDate.setFullYear(2016, 11, 31);<br/>
+        plus.nativeUI.pickDate(function (e) {<br/>
+        var d = e.date;<br/>
+        info.innerText = '您选择的日期是:' + d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();<br/>
+        }, function (e) {<br/>
+        info.innerText = "您没有选择日期";<br/>
+        }, {<br/>
+        title: "请选择日期",<br/>
+        date: dDate,<br/>
+        minDate: minDate,<br/>
+        maxDate: maxDate<br/>
+        });<br/>
+        })<br/>
+        document.getElementById("pickTimeBtn").addEventListener('tap', function () {<br/>
+        var dTime = new Date();<br/>
+        dTime.setHours(6, 0);<br/>
+        plus.nativeUI.pickTime(function (e) {<br/>
+        var d = e.date;<br/>
+        info.innerText = "您选择的时间是：" + d.getHours() + ":" + d.getMinutes();<br/>
+        }, function (e) {<br/>
+        info.innerText = "您没有选择时间"<br/>
+        }, {<br/>
+        title: "请选择时间",<br/>
+        is24Hour: true,<br/>
+        time: dTime<br/>
+        });<br/>
+        });<br/>
+        &lt;/script&gt;<br/>
+    </div>
 </div>
 <script src="../js/mui.min.js"></script>
 <script type="text/javascript" charset="utf-8">

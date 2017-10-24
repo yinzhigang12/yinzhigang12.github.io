@@ -73,6 +73,78 @@
     </div>
 </div>
 <p id="info"></p>
+
+<div class="mui-content">
+    &lt;div class="mui-content-padded"&gt;<br/>
+    &lt;p&gt;这是5+ runtime封装的原生actionsheet，该模式具备如下优点：&lt;/p&gt;<br/>
+    &lt;ul class="des"&gt;<br/>
+    &lt;li&gt;支持覆盖顶部状态栏&lt;/li&gt;<br/>
+    &lt;li&gt;支持跨webview的遮罩&lt;/li&gt;<br/>
+    &lt;li&gt;在有map等原生组件时，依然会显示在最顶层，不会被遮挡&lt;/li&gt;<br/>
+    &lt;/ul&gt;<br/>
+    &lt;p&gt;另一方面，原生模式的actionsheet目前不支持自定义样式&lt;/p&gt;<br/>
+
+    &lt;p&gt;<br/>
+    &lt;a id="picture-btn" class="mui-btn mui-btn-primary mui-btn-block mui-btn-outlined"
+    style="padding: 5px 20px;"&gt;打开actionsheet&lt;/a&gt;<br/>
+    &lt;/p&gt;<br/>
+    &lt;/div&gt;<br/>
+
+    &lt;script&gt;<br/>
+    mui.init({<br/>
+    swipeBack: true //启用右滑关闭功能<br/>
+    });<br/>
+    mui('body').on('shown', '.mui-popover', function (e) {<br/>
+    //console.log('shown', e.detail.id);//detail为当前popover元素<br/>
+    });<br/>
+    mui('body').on('hidden', '.mui-popover', function (e) {<br/>
+    //console.log('hidden', e.detail.id);//detail为当前popover元素<br/>
+    });<br/>
+    var info = document.getElementById("info");<br/>
+    document.getElementById("picture-btn").addEventListener('tap', function () {<br/>
+    var btnArray = [{title: "拍照或录像"}, {title: "选取现有的"}];<br/>
+    plus.nativeUI.actionSheet({<br/>
+    title: "选择照片",<br/>
+    cancel: "取消",<br/>
+    buttons: btnArray<br/>
+    }, function (e) {<br/>
+    var index = e.index;<br/>
+    var text = "你刚点击了\"";<br/>
+    switch (index) {<br/>
+    case 0:<br/>
+    text += "取消";<br/>
+    break;<br/>
+    case 1:<br/>
+    text += "拍照或录像";<br/>
+    break;<br/>
+    case 2:<br/>
+    text += "选取现有的";<br/>
+    break;<br/>
+    }<br/>
+    info.innerHTML = text + "\"按钮";<br/>
+    });<br/>
+    });<br/>
+    document.getElementById("delete-btn").addEventListener('tap', function () {<br/>
+    var btnArray = [{title: "删除信息", style: "destructive"}];<br/>
+    plus.nativeUI.actionSheet({<br/>
+    cancel: "取消",<br/>
+    buttons: btnArray<br/>
+    }, function (e) {<br/>
+    var index = e.index;<br/>
+    var text = "你刚点击了\"";<br/>
+    switch (index) {<br/>
+    case 0:<br/>
+    text += "取消";<br/>
+    break;<br/>
+    case 1:<br/>
+    text += "删除信息";<br/>
+    break;<br/>
+    }
+    info.innerHTML = text + "\"按钮";<br/>
+    });<br/>
+    });<br/>
+    &lt;/script&gt;<br/>
+</div>
 </body>
 <script src="../js/mui.min.js"></script>
 <script>

@@ -2,155 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c0068f4-8aaf-410b-b564-630e2bad97dd" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/fonts/mui-icons-extra.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/fonts/mui.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/images/60x60.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/images/cbd.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/images/login-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/images/muwu.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/images/qrcode.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/images/shuijiao.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/images/yuantiao.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/css/app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/css/feedback.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/css/icons-extra.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/css/mui.dtpicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/css/mui.imageviewer.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/css/mui.indexedlist.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/css/mui.listpicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/css/mui.picker.all.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/css/mui.picker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/css/mui.picker.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/css/mui.poppicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/actionsheet-plus.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/ad.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/ajax.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/beecloud.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/best-practices/list-to-detail/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/best-practices/list-to-detail/list-to-detail.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/best-practices/list-to-detail/listview.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/best-practices/list-to-detail/vue.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/buttons-with-badges.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/buttons-with-block.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/buttons-with-icons.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/buttons-with-loading.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/buttons.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/card.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/checkbox.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/clouddb_wilddog.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/date.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/dialog.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/dtpicker.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/echarts.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/feedback.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/grid-default.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/grid-pagination.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/guide.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/icons-extra.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/icons.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/im-chat.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/imageviewer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/indexed-list-select.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/indexed-list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/info.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/input.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/lazyload-image.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/list-triplex-row.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/list-with-input.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/locker-dom.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/media-list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/message-bottom.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/modals.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/nav-nativeObj.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/nav.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/nav_transparent.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/nav_transparent_native.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/numbox.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/offcanvas-drag-down.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/offcanvas-drag-left-plus-main.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/offcanvas-drag-left-plus-menu.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/offcanvas-drag-left.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/offcanvas-drag-right-plus-main.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/offcanvas-drag-right-plus-menu.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/offcanvas-drag-right.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/pagination.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/picker.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/popovers.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/progressbar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/pullrefresh.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/pullrefresh_main.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/pullrefresh_sub.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/pullrefresh_with_tab.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/radio.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/range.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/setting.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/slider-default.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/slider-native.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/slider-table-default.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/slider-table-pagination.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/slider-with-title.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/switches.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/tab-top-subpage-1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/tab-top-subpage-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/tab-top-subpage-3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/tab-top-subpage-4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/tab-top-subpage-5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/tab-top-webview-main.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/tab-vertical-scroll.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/tab-webview-main.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/tab-webview-subpage-about.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/tab-webview-subpage-chat.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/tab-webview-subpage-contact.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/tab-webview-subpage-setting.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/tab-with-segmented-control-vertical.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/tab-with-segmented-control.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/tab-with-viewpagerindicator.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/tabbar-labels-only.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/tabbar-with-submenus.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/tabbar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/tableviews-with-badges.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/tableviews-with-collapses.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/tableviews-with-swipe.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/tableviews.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/examples/typography.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/index-menu.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/js/95516.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/js/ad.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/js/arttmpl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/js/beecloud.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/js/city.data-3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/js/city.data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/js/feedback.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/js/mui.dtpicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/js/mui.imageViewer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/js/mui.indexedlist.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/js/mui.lazyload.img.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/js/mui.lazyload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/js/mui.listpicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/js/mui.locker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/js/mui.picker.all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/js/mui.picker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/js/mui.picker.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/js/mui.poppicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/js/mui.previewimage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/js/mui.pullToRefresh.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/js/mui.pullToRefresh.material.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/js/mui.view.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/js/mui.zoom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/js/webviewGroup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/libs/echarts-all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloMui/manifest.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloMui/css/mui.min.css" afterPath="$PROJECT_DIR$/HelloMui/css/mui.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloMui/examples/accordion.html" afterPath="$PROJECT_DIR$/HelloMui/examples/accordion.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloMui/examples/actionsheet-plus.html" afterPath="$PROJECT_DIR$/HelloMui/examples/actionsheet-plus.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloMui/examples/actionsheet.html" afterPath="$PROJECT_DIR$/HelloMui/examples/actionsheet.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloMui/examples/badges.html" afterPath="$PROJECT_DIR$/HelloMui/examples/badges.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloMui/js/mui.js" afterPath="$PROJECT_DIR$/HelloMui/js/mui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloMui/js/mui.min.js" afterPath="$PROJECT_DIR$/HelloMui/js/mui.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloMui/js/update.js" afterPath="$PROJECT_DIR$/HelloMui/js/update.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloMui/examples/beecloud.html" afterPath="$PROJECT_DIR$/HelloMui/examples/beecloud.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloMui/examples/buttons-with-badges.html" afterPath="$PROJECT_DIR$/HelloMui/examples/buttons-with-badges.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloMui/examples/buttons-with-block.html" afterPath="$PROJECT_DIR$/HelloMui/examples/buttons-with-block.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloMui/examples/buttons-with-icons.html" afterPath="$PROJECT_DIR$/HelloMui/examples/buttons-with-icons.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloMui/examples/buttons-with-loading.html" afterPath="$PROJECT_DIR$/HelloMui/examples/buttons-with-loading.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloMui/examples/buttons.html" afterPath="$PROJECT_DIR$/HelloMui/examples/buttons.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloMui/examples/card.html" afterPath="$PROJECT_DIR$/HelloMui/examples/card.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloMui/examples/checkbox.html" afterPath="$PROJECT_DIR$/HelloMui/examples/checkbox.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloMui/examples/date.html" afterPath="$PROJECT_DIR$/HelloMui/examples/date.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloMui/examples/dialog.html" afterPath="$PROJECT_DIR$/HelloMui/examples/dialog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloMui/examples/dtpicker.html" afterPath="$PROJECT_DIR$/HelloMui/examples/dtpicker.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloMui/examples/grid-default.html" afterPath="$PROJECT_DIR$/HelloMui/examples/grid-default.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloMui/examples/grid-pagination.html" afterPath="$PROJECT_DIR$/HelloMui/examples/grid-pagination.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -164,10 +33,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
+            <state relative-caret-position="19">
               <caret line="205" column="49" lean-forward="false" selection-start-line="205" selection-start-column="49" selection-end-line="205" selection-end-column="49" />
               <folding />
             </state>
@@ -194,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="H5Mui.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="H5Mui.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HelloMui/H5Mui.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6525">
+            <state relative-caret-position="471">
               <caret line="384" column="0" lean-forward="false" selection-start-line="384" selection-start-column="0" selection-end-line="384" selection-end-column="0" />
               <folding>
                 <element signature="e#1473#2648#2" expanded="true" />
@@ -210,7 +79,7 @@
       <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HelloMui/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
+            <state relative-caret-position="399">
               <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="38" />
               <folding />
             </state>
@@ -220,7 +89,7 @@
       <file leaf-file-name="AmazeWeb.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AmazeWeb.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-534">
+            <state relative-caret-position="703">
               <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
               <folding>
                 <element signature="e#4054#4058#0" expanded="true" />
@@ -527,7 +396,8 @@
       <workItem from="1504801596412" duration="2787000" />
       <workItem from="1504831234690" duration="2087000" />
       <workItem from="1508812391122" duration="290000" />
-      <workItem from="1508812692747" duration="7117000" />
+      <workItem from="1508812692747" duration="7732000" />
+      <workItem from="1508863514758" duration="90000" />
     </task>
     <task id="LOCAL-00001" summary="AmazeUI模板范例">
       <created>1504696088261</created>
@@ -571,23 +441,30 @@
       <option name="project" value="LOCAL" />
       <updated>1508824963642</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="H5Mui样式总览">
+      <created>1508826740301</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1508826740302</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67163000" />
+    <option name="totallyTimeSpent" value="67868000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="116" width="1440" height="727" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21916842" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21916842" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2629,7 +2506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2637,7 +2513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2645,26 +2520,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1013">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HelloApp/H5Mui.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6997">
-          <caret line="383" column="0" lean-forward="true" selection-start-line="383" selection-start-column="0" selection-end-line="383" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/HelloApp/H5Mui.html" />
     <entry file="file://$PROJECT_DIR$/HelloMui/css/mui.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="75403" lean-forward="false" selection-start-line="4" selection-start-column="75403" selection-end-line="4" selection-end-column="75403" />
-          <folding>
-            <element signature="e#11120#12271#2" expanded="false" />
-            <element signature="e#12387#13535#2" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2682,9 +2545,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="599">
           <caret line="8018" column="26" lean-forward="false" selection-start-line="8018" selection-start-column="26" selection-end-line="8018" selection-end-column="26" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2698,7 +2558,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AmazeWeb.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-534">
+        <state relative-caret-position="703">
           <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
           <folding>
             <element signature="e#4054#4058#0" expanded="true" />
@@ -2720,10 +2580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99882">
           <caret line="5613" column="1" lean-forward="false" selection-start-line="5613" selection-start-column="1" selection-end-line="5613" selection-end-column="1" />
-          <folding>
-            <element signature="e#14398#15549#2" expanded="false" />
-            <element signature="e#15694#16842#2" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2737,7 +2593,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HelloMui/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
+        <state relative-caret-position="399">
           <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="38" />
           <folding />
         </state>
@@ -2747,14 +2603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="547">
           <caret line="54" column="7" lean-forward="false" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="205" column="49" lean-forward="false" selection-start-line="205" selection-start-column="49" selection-end-line="205" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -2777,12 +2625,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HelloMui/H5Mui.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6525">
+        <state relative-caret-position="471">
           <caret line="384" column="0" lean-forward="false" selection-start-line="384" selection-start-column="0" selection-end-line="384" selection-end-column="0" />
           <folding>
             <element signature="e#1473#2648#2" expanded="true" />
             <element signature="n#style#0;n#a#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="205" column="49" lean-forward="false" selection-start-line="205" selection-start-column="49" selection-end-line="205" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>

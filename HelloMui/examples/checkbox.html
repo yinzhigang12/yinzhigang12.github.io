@@ -53,6 +53,52 @@
             </div>
         </form>
     </div>
+
+    <div class="mui-card">
+        &lt;h5 class="mui-content-padded"&gt;图标左对齐&lt;/h5&gt;<br/>
+        &lt;div class="mui-card"&gt;<br/>
+        &lt;form class="mui-input-group"&gt;<br/>
+        &lt;div class="mui-input-row mui-checkbox mui-left"&gt;<br/>
+        &lt;label&gt;checked：false&lt;/label&gt;<br/>
+        &lt;input name="checkbox" value="Item 1" type="checkbox"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="mui-input-row mui-checkbox mui-left"&gt;<br/>
+        &lt;label&gt;checked：true&lt;/label&gt;<br/>
+        &lt;input name="checkbox" value="Item 2" type="checkbox" checked&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="mui-input-row mui-checkbox mui-left mui-disabled"&gt;<br/>
+        &lt;label&gt;disabled checkbox&lt;/label&gt;<br/>
+        &lt;input name="checkbox" type="checkbox" disabled="disabled"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;/form&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;h5 class="mui-content-padded"&gt;图标右对齐&lt;/h5&gt;<br/>
+        &lt;div class="mui-card"&gt;<br/>
+        &lt;form class="mui-input-group"&gt;<br/>
+        &lt;div class="mui-input-row mui-checkbox"&gt;<br/>
+        &lt;label&gt;checked：false&lt;/label&gt;<br/>
+        &lt;input name="checkbox1" value="Item 3" type="checkbox"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="mui-input-row mui-checkbox"&gt;<br/>
+        &lt;label&gt;checked：true&lt;/label&gt;<br/>
+        &lt;input name="checkbox1" value="Item 4" type="checkbox" checked&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="mui-input-row mui-checkbox mui-disabled"&gt;<br/>
+        &lt;label&gt;disabled checkbox&lt;/label&gt;<br/>
+        &lt;input name="checkbox1" type="checkbox" disabled="disabled"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;/form&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;script&gt;<br/>
+        mui.init({<br/>
+        swipeBack: true //启用右滑关闭功能<br/>
+        });<br/>
+        mui('.mui-input-group').on('change', 'input', function () {<br/>
+        var value = this.checked ? "true" : "false";<br/>
+        this.previousElementSibling.innerText = "checked：" + value;<br/>
+        });<br/>
+        &lt;/script&gt;<br/>
+    </div>
 </div>
 </body>
 <script src="../js/mui.min.js"></script>
