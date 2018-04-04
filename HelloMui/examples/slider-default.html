@@ -19,6 +19,8 @@
     <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
     <h1 class="mui-title">图片轮播</h1>
 </header>
+
+
 <div class="mui-content">
     <ul class="mui-table-view mui-table-view-chevron">
         <li id="switch" class="mui-table-view-cell">
@@ -75,6 +77,84 @@
         <div class="mui-indicator"></div>
     </div>
 </div>
+
+<div class="mui-card">
+    &lt;div class="mui-content"&gt;<br/>
+    &lt;ul class="mui-table-view mui-table-view-chevron"&gt;<br/>
+    &lt;li id="switch" class="mui-table-view-cell"&gt;<br/>
+    定时轮播
+    &lt;div class="mui-switch"&gt;<br/>
+    &lt;div class="mui-switch-handle"&gt;&lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;/li&gt;<br/>
+    &lt;/ul&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div id="slider" class="mui-slider"&gt;<br/>
+    &lt;div class="mui-slider-group mui-slider-loop"&gt;<br/>
+    &lt;!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) --&gt;<br/>
+    &lt;div class="mui-slider-item mui-slider-item-duplicate"&gt;<br/>
+    &lt;a href="#"&gt;<br/>
+    &lt;img src="../images/yuantiao.jpg"&gt;<br/>
+    &lt;/a&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;!-- 第一张 --&gt;<br/>
+    &lt;div class="mui-slider-item"&gt;<br/>
+    &lt;a href="#"&gt;<br/>
+    &lt;img src="../images/shuijiao.jpg"&gt;<br/>
+    &lt;/a&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;!-- 第二张 --&gt;<br/>
+    &lt;div class="mui-slider-item"&gt;<br/>
+    &lt;a href="#"&gt;<br/>
+    &lt;img src="../images/muwu.jpg"&gt;<br/>
+    &lt;/a&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;!-- 第三张 --&gt;<br/>
+    &lt;div class="mui-slider-item"&gt;<br/>
+    &lt;a href="#"&gt;<br/>
+    &lt;img src="../images/cbd.jpg"&gt;<br/>
+    &lt;/a&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;!-- 第四张 --&gt;<br/>
+    &lt;div class="mui-slider-item"&gt;<br/>
+    &lt;a href="#"&gt;<br/>
+    &lt;img src="../images/yuantiao.jpg"&gt;<br/>
+    &lt;/a&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) --&gt;<br/>
+    &lt;div class="mui-slider-item mui-slider-item-duplicate"&gt;<br/>
+    &lt;a href="#"&gt;<br/>
+    &lt;img src="../images/shuijiao.jpg"&gt;<br/>
+    &lt;/a&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="mui-slider-indicator"&gt;<br/>
+    &lt;div class="mui-indicator mui-active"&gt;&lt;/div&gt;<br/>
+    &lt;div class="mui-indicator"&gt;&lt;/div&gt;<br/>
+    &lt;div class="mui-indicator"&gt;&lt;/div&gt;<br/>
+    &lt;div class="mui-indicator"&gt;&lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+
+    &lt;script type="text/javascript" charset="utf-8"&gt;<br/>
+    mui.init({<br/>
+    swipeBack: true //启用右滑关闭功能<br/>
+    });<br/>
+    var slider = mui("#slider");<br/>
+    document.getElementById("switch").addEventListener('toggle', function (e) {<br/>
+    if (e.detail.isActive) {<br/>
+    slider.slider({<br/>
+    interval: 5000<br/>
+    });<br/>
+    } else {<br/>
+    slider.slider({<br/>
+    interval: 0<br/>
+    });<br/>
+    }<br/>
+    });<br/>
+    &lt;/script&gt;<br/>
+</div>
+
 <script src="../js/mui.min.js"></script>
 <script type="text/javascript" charset="utf-8">
     mui.init({

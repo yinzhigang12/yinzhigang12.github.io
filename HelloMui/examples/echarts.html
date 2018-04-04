@@ -49,6 +49,118 @@
         <h5>饼图示例</h5>
         <div class="chart" id="pieChart"></div>
     </div>
+
+    <div class="mui-card">
+        &lt;div class="mui-content-padded"&gt;<br/>
+        &lt;p style="text-indent: 22px;"&gt;<br/>
+        这是mui集成百度ECharts的图表示例，ECharts的详细用法及 API 请参考其官方网站: &lt;a id='echarts' data-url='http://echarts.baidu.com'&gt;http://echarts.baidu.com&lt;/a&gt;<br/>
+        &lt;/p&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="mui-content-padded"&gt;<br/>
+        &lt;h5&gt;柱图示例&lt;/h5&gt;<br/>
+        &lt;div class="chart" id="barChart"&gt;&lt;/div&gt;<br/>
+        &lt;h5&gt;线图示例&lt;/h5&gt;<br/>
+        &lt;div class="chart" id="lineChart"&gt;&lt;/div&gt;<br/>
+        &lt;h5&gt;饼图示例&lt;/h5&gt;<br/>
+        &lt;div class="chart" id="pieChart"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+
+        &lt;script&gt;<br/>
+        var getOption = function (chartType) {<br/>
+        var chartOption = chartType == 'pie' ? {<br/>
+        calculable: false,<br/>
+        series: [{<br/>
+        name: '访问来源',<br/>
+        type: 'pie',<br/>
+        radius: '65%',<br/>
+        center: ['50%', '50%'],<br/>
+        data: [{<br/>
+        value: 335,<br/>
+        name: '直接访问'<br/>
+        }, {<br/>
+        value: 310,<br/>
+        name: '邮件营销'<br/>
+        }, {<br/>
+        value: 234,<br/>
+        name: '联盟广告'<br/>
+        }, {<br/>
+        value: 135,<br/>
+        name: '视频广告'<br/>
+        }, {<br/>
+        value: 1548,<br/>
+        name: '搜索引擎'<br/>
+        }]<br/>
+        }]<br/>
+        } : {<br/>
+        legend: {<br/>
+        data: ['蒸发量', '降水量']<br/>
+        },<br/>
+        grid: {<br/>
+        x: 35,<br/>
+        x2: 10,<br/>
+        y: 30,<br/>
+        y2: 25<br/>
+        },<br/>
+        toolbox: {<br/>
+        show: false,<br/>
+        feature: {<br/>
+        mark: {<br/>
+        show: true<br/>
+        },<br/>
+        dataView: {<br/>
+        show: true,<br/>
+        readOnly: false<br/>
+        },<br/>
+        magicType: {<br/>
+        show: true,<br/>
+        type: ['line', 'bar']<br/>
+        },<br/>
+        restore: {<br/>
+        show: true<br/>
+        },<br/>
+        saveAsImage: {<br/>
+        show: true<br/>
+        }<br/>
+        }<br/>
+        },<br/>
+        calculable: false,<br/>
+        xAxis: [{<br/>
+        type: 'category',<br/>
+        data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']<br/>
+        }],<br/>
+        yAxis: [{<br/>
+        type: 'value',<br/>
+        splitArea: {<br/>
+        show: true<br/>
+        }<br/>
+        }],<br/>
+        series: [{<br/>
+        name: '蒸发量',<br/>
+        type: chartType,<br/>
+        data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]<br/>
+        }, {<br/>
+        name: '降水量',<br/>
+        type: chartType,<br/>
+        data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]<br/>
+        }]<br/>
+        };
+        return chartOption;<br/>
+        };<br/>
+        var byId = function (id) {<br/>
+        return document.getElementById(id);<br/>
+        };<br/>
+        var barChart = echarts.init(byId('barChart'));<br/>
+        barChart.setOption(getOption('bar'));<br/>
+        var lineChart = echarts.init(byId('lineChart'));<br/>
+        lineChart.setOption(getOption('line'));<br/>
+        var pieChart = echarts.init(byId('pieChart'));<br/>
+        pieChart.setOption(getOption('pie'));<br/>
+        byId("echarts").addEventListener('tap', function () {<br/>
+        var url = this.getAttribute('data-url');<br/>
+        plus.runtime.openURL(url);<br/>
+        }, false);<br/>
+        &lt;/script&gt;<br/>
 </div>
 
 <script src="../libs/echarts-all.js"></script>

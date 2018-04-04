@@ -247,6 +247,97 @@
         <div class="mui-indicator"></div>
         <div class="mui-indicator"></div>
     </div>
+
+    <div class="mui-card">
+        &lt;div class="mui-slider-group"&gt;<br/>
+        &lt;!-- 第一张 --&gt;<br/>
+        &lt;div class="mui-slider-item"&gt;<br/>
+        &lt;div class="item-logo" style="background-color: #D74B28"&gt;<br/>
+        &lt;a href="#"&gt;<br/>
+        MUI<br/>
+        &lt;/a&gt;<br/>
+        &lt;div class="animate guide-show"&gt;<br/>
+        &lt;h2 class="animated bounceInDown"&gt;小巧高能&lt;/h2&gt;<br/>
+        &lt;li class="animated bounceInLeft"&gt;几十K的JS和CSS&lt;/li&gt;<br/>
+        &lt;li class="animated bounceInRight"&gt;上百种控件样式和模板&lt;/li&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;!-- 第二张 --&gt;<br/>
+        &lt;div class="mui-slider-item"&gt;<br/>
+        &lt;div class="item-logo" style="background-color: #02C1ED;"&gt;<br/>
+        &lt;a href="#"&gt;<br/>
+        MUI<br/>
+        &lt;/a&gt;<br/>
+        &lt;div id="tips-2" class="animate mui-hidden"&gt;<br/>
+        &lt;h2 class="animated bounceInDown"&gt;原生UI&lt;/h2&gt;<br/>
+        &lt;li class="animated bounceInLeft"&gt;以iOS原生UI为基础&lt;/li&gt;<br/>
+        &lt;li class="animated bounceInRight"&gt;补充Android特有样式&lt;/li&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;!-- 第三张 --&gt;<br/>
+        &lt;div class="mui-slider-item"&gt;<br/>
+        &lt;div class="item-logo" style="background-color: #67C962;"&gt;<br/>
+        &lt;a href="#"&gt;<br/>
+        MUI<br/>
+        &lt;/a&gt;<br/>
+        &lt;div id="tips-3" class="animate mui-hidden"&gt;<br/>
+        &lt;h2 class="animated bounceInDown"&gt;流畅体验&lt;/h2&gt;<br/>
+        &lt;li class="animated bounceInLeft"&gt;下拉刷新、转场动画&lt;/li&gt;<br/>
+        &lt;li class="animated bounceInRight"&gt;整个世界都流畅了&lt;/li&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;!-- 第四张 --&gt;<br/>
+        &lt;div class="mui-slider-item"&gt;<br/>
+        &lt;div class="item-logo" style="background-color: #FCD208;"&gt;<br/>
+        &lt;a href="#"&gt;<br/>
+        MUI<br/>
+        &lt;/a&gt;<br/>
+        &lt;div class="animate"&gt;<br/>
+        &lt;button id='close' class="mui-btn mui-btn-warning mui-btn-outlined"&gt;立即体验&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="mui-slider-indicator"&gt;<br/>
+        &lt;div class="mui-indicator mui-active"&gt;&lt;/div&gt;<br/>
+        &lt;div class="mui-indicator"&gt;&lt;/div&gt;<br/>
+        &lt;div class="mui-indicator"&gt;&lt;/div&gt;<br/>
+        &lt;div class="mui-indicator"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+
+        &lt;script&gt;<br/>
+        mui.back = function () {<br/>
+        };<br/>
+        mui.plusReady(function () {<br/>
+        if (mui.os.ios) {<br/>
+        plus.navigator.setFullscreen(true);<br/>
+        }<br/>
+        plus.navigator.closeSplashscreen();<br/>
+        });<br/>
+        //立即体验按钮点击事件<br/>
+        document.getElementById("close").addEventListener('tap', function (event) {<br/>
+        plus.storage.setItem("lauchFlag", "true");<br/>
+        plus.navigator.setFullscreen(false);<br/>
+        plus.webview.currentWebview().close();<br/>
+        }, false);<br/>
+        //图片切换时，触发动画<br/>
+        document.querySelector('.mui-slider').addEventListener('slide', function (event) {<br/>
+        //注意slideNumber是从0开始的；<br/>
+        var index = event.detail.slideNumber + 1;<br/>
+        if (index == 2 || index == 3) {<br/>
+        var item = document.getElementById("tips-" + index);<br/>
+        if (item.classList.contains("mui-hidden")) {<br/>
+        item.classList.remove("mui-hidden");<br/>
+        item.classList.add("guide-show");<br/>
+        }<br/>
+        }<br/>
+        });<br/>
+
+        &lt;/script&gt;<br/>
+    </div>
 </div>
 <script src="../js/mui.min.js"></script>
 <script>
