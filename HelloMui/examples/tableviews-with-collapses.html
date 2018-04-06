@@ -58,6 +58,65 @@
         </ul>
     </div>
 </div>
+
+<div class="mui-card">
+    &lt;ul class="mui-table-view mui-table-view-chevron"&gt;<br/>
+    &lt;li class="mui-table-view-cell"&gt;card（圆角列表）<br/>
+    &lt;div id="M_Toggle" class="mui-switch mui-active"&gt;<br/>
+    &lt;div class="mui-switch-handle"&gt;&lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;/li&gt;<br/>
+    &lt;li class="mui-table-view-cell mui-collapse"&gt;&lt;a class="mui-navigate-right" href="#"&gt;产品&lt;/a&gt;<br/>
+    &lt;ul class="mui-table-view mui-table-view-chevron"&gt;<br/>
+    &lt;li class="mui-table-view-cell"&gt;&lt;a class="mui-navigate-right" href="#"&gt;iOS&lt;/a&gt;<br/>
+    &lt;/li&gt;<br/>
+    &lt;li class="mui-table-view-cell"&gt;&lt;a class="mui-navigate-right" href="#"&gt;Android&lt;/a&gt;<br/>
+    &lt;/li&gt;<br/>
+    &lt;li class="mui-table-view-cell"&gt;&lt;a class="mui-navigate-right" href="#"&gt;HTML5&lt;/a&gt;<br/>
+    &lt;/li&gt;<br/>
+    &lt;/ul&gt;<br/>
+    &lt;/li&gt;<br/>
+    &lt;li class="mui-table-view-cell mui-collapse"&gt;&lt;a class="mui-navigate-right" href="#"&gt;方案&lt;/a&gt;<br/>
+    &lt;ul class="mui-table-view mui-table-view-chevron"&gt;<br/>
+    &lt;li class="mui-table-view-cell"&gt;&lt;a class="mui-navigate-right" href="#"&gt;PC方案&lt;/a&gt;<br/>
+    &lt;/li&gt;<br/>
+    &lt;li class="mui-table-view-cell"&gt;&lt;a class="mui-navigate-right" href="#"&gt;手机方案&lt;/a&gt;<br/>
+    &lt;/li&gt;<br/>
+    &lt;li class="mui-table-view-cell"&gt;&lt;a class="mui-navigate-right" href="#"&gt;TV方案&lt;/a&gt;<br/>
+    &lt;/li&gt;<br/>
+    &lt;/ul&gt;<br/>
+    &lt;/li&gt;<br/>
+    &lt;li class="mui-table-view-cell mui-collapse"&gt;&lt;a class="mui-navigate-right" href="#"&gt;新闻&lt;/a&gt;<br/>
+    &lt;ul class="mui-table-view mui-table-view-chevron"&gt;<br/>
+    &lt;li class="mui-table-view-cell"&gt;&lt;a class="mui-navigate-right" href="#"&gt;公司新闻&lt;/a&gt;<br/>
+    &lt;/li&gt;<br/>
+    &lt;li class="mui-table-view-cell"&gt;&lt;a class="mui-navigate-right" href="#"&gt;行业新闻&lt;/a&gt;<br/>
+    &lt;/li&gt;<br/>
+    &lt;/ul&gt;<br/>
+    &lt;/li&gt;<br/>
+    &lt;/ul&gt;<br/>
+
+    &lt;script&gt;<br/>
+    mui.init({<br/>
+    swipeBack: true //启用右滑关闭功能<br/>
+    });<br/>
+    window.addEventListener('toggle', function (event) {<br/>
+    if (event.target.id === 'M_Toggle') {<br/>
+    var isActive = event.detail.isActive;<br/>
+    var table = document.querySelector('.mui-table-view');<br/>
+    var card = document.querySelector('.mui-card');<br/>
+    if (isActive) {<br/>
+    card.appendChild(table);<br/>
+    card.style.display = '';<br/>
+    } else {<br/>
+    var content = document.querySelector('.mui-content');<br/>
+    content.insertBefore(table, card);<br/>
+    card.style.display = 'none';<br/>
+    }<br/>
+    }<br/>
+    });<br/>
+    &lt;/script&gt;<br/>
+</div>
 </body>
 <script src="../js/mui.min.js"></script>
 <script>

@@ -99,7 +99,85 @@
         <br/>
         <br/>
     </div>
+
+    <div class="mui-card">
+        &lt;div class="mui-content-padded"&gt;<br/>
+        &lt;h5 class="mui-content-padded"&gt;默认&lt;/h5&gt;<br/>
+        &lt;div class="mui-numbox"&gt;<br/>
+        &lt;button class="mui-btn mui-btn-numbox-minus" type="button"&gt;-&lt;/button&gt;<br/>
+        &lt;input class="mui-input-numbox" type="number"/&gt;<br/>
+        &lt;button class="mui-btn mui-btn-numbox-plus" type="button"&gt;+&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;h5 class="mui-content-padded"&gt;限定最小值和最大值(1~9)&lt;/h5&gt;<br/>
+        &lt;div class="mui-numbox" data-numbox-min='1' data-numbox-max='9'&gt;<br/>
+        &lt;button class="mui-btn mui-btn-numbox-minus" type="button"&gt;-&lt;/button&gt;<br/>
+        &lt;input id="test" class="mui-input-numbox" type="number" value="5"/&gt;<br/>
+        &lt;button class="mui-btn mui-btn-numbox-plus" type="button"&gt;+&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;h5 class="mui-content-padded"&gt;设定步长值(步长 10)&lt;/h5&gt;<br/>
+        &lt;div class="mui-numbox" data-numbox-step='10' data-numbox-min='10' data-numbox-max='90'&gt;<br/>
+        &lt;button class="mui-btn mui-btn-numbox-minus" type="button"&gt;-&lt;/button&gt;<br/>
+        &lt;input class="mui-input-numbox" type="number"/&gt;<br/>
+        &lt;button class="mui-btn mui-btn-numbox-plus" type="button"&gt;+&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;h5 class="mui-content-padded"&gt;取值操作&lt;/h5&gt;<br/>
+        &lt;div class="mui-numbox"&gt;<br/>
+        &lt;button class="mui-btn mui-btn-numbox-minus" type="button"&gt;-&lt;/button&gt;<br/>
+        &lt;input id="box" class="mui-input-numbox" type="number"/&gt;<br/>
+        &lt;button class="mui-btn mui-btn-numbox-plus" type="button"&gt;+&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;button id="btn" class="mui-btn" style="padding: 7px 12px;"&gt;取当前值&lt;/button&gt;<br/>
+        &lt;h5 class="mui-content-padded"&gt;在行内&lt;/h5&gt; 购买数量:<br/>
+        &lt;div class="mui-numbox"&gt;<br/>
+        &lt;button class="mui-btn mui-btn-numbox-minus" type="button"&gt;-&lt;/button&gt;<br/>
+        &lt;input class="mui-input-numbox" type="number"/&gt;<br/>
+        &lt;button class="mui-btn mui-btn-numbox-plus" type="button"&gt;+&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;h5 class="mui-content-padded"&gt;在表单中&lt;/h5&gt;<br/>
+        &lt;div class="mui-card"&gt;<br/>
+        &lt;form class="mui-input-group"&gt;<br/>
+        &lt;div class="mui-input-row"&gt;<br/>
+        &lt;label&gt;数字框一&lt;/label&gt;<br/>
+        &lt;div class="mui-numbox"&gt;<br/>
+        &lt;button class="mui-btn mui-btn-numbox-minus" type="button"&gt;-&lt;/button&gt;<br/>
+        &lt;input class="mui-input-numbox" type="number"/&gt;<br/>
+        &lt;button class="mui-btn mui-btn-numbox-plus" type="button"&gt;+&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="mui-input-row"&gt;<br/>
+        &lt;label&gt;数字框二&lt;/label&gt;<br/>
+        &lt;div class="mui-numbox"&gt;<br/>
+        &lt;button class="mui-btn mui-btn-numbox-minus" type="button"&gt;-&lt;/button&gt;<br/>
+        &lt;input class="mui-input-numbox" type="number"/&gt;<br/>
+        &lt;button class="mui-btn mui-btn-numbox-plus" type="button"&gt;+&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;/form&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;h5 class="mui-content-padded"&gt;通过样式定义大小(220x60)&lt;/h5&gt;<br/>
+        &lt;div class="mui-numbox" style="width: 220px;height: 60px;"&gt;<br/>
+        &lt;button class="mui-btn-numbox-minus" type="button"&gt;-&lt;/button&gt;<br/>
+        &lt;input class="mui-input-numbox" type="number"/&gt;<br/>
+        &lt;button class="mui-btn-numbox-plus" type="button"&gt;+&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;br/&gt;<br/>
+        &lt;br/&gt;<br/>
+        &lt;/div&gt;<br/>
+
+        &lt;script&gt;<br/>
+        mui.init();<br/>
+        document.getElementById("btn").addEventListener('tap', function (event) {<br/>
+        mui.alert('当前值: ' + document.getElementById("box").value, null, "提示");<br/>
+        });<br/>
+        var testBox = document.getElementById("test");<br/>
+        testBox.addEventListener('change', function () {<br/>
+        console.log(testBox.value);<br/>
+        });<br/>
+        &lt;/script&gt;<br/>
+    </div>
 </div>
+
+
 <script src="../js/mui.min.js"></script>
 <script>
     mui.init();

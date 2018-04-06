@@ -72,6 +72,70 @@
         </div>
     </form>
 </div>
+
+<div class="mui-card">
+    &lt;script type="text/javascript"&gt;<br/>
+    mui.init({<br/>
+    swipeBack: true //启用右滑关闭功能<br/>
+    });<br/>
+    var header = document.getElementById("header");<br/>
+    //左侧icon<br/>
+    var lefticon = document.createElement('a');<br/>
+    lefticon.className = 'mui-action-back mui-icon mui-icon-left-nav mui-pull-left';<br/>
+    //左侧图标+文字按钮<br/>
+    var leftbtn = document.createElement('button');<br/>
+    leftbtn.className = 'mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left';<br/>
+    var span = document.createElement('span');<br/>
+    span.className = 'mui-icon mui-icon-left-nav';<br/>
+    leftbtn.appendChild(span);<br/>
+    var text = document.createTextNode('首页');<br/>
+    leftbtn.appendChild(text);<br/>
+    //右侧icon<br/>
+    var righticon = document.createElement('a');<br/>
+    righticon.className = 'mui-icon mui-icon-bars mui-pull-right';<br/>
+    //右侧文字按钮<br/>
+    var rightbtn = document.createElement('button');<br/>
+    rightbtn.className = 'mui-btn mui-btn-blue mui-btn-link mui-pull-right';<br/>
+    rightbtn.innerText = '编辑';<br/>
+
+    //删除原先存在的节点<br/>
+    function remove(selector) {<br/>
+    var elem = header.querySelector(selector);<br/>
+    if (elem) {<br/>
+    header.removeChild(elem);<br/>
+    }<br/>
+    }<br/>
+
+    mui('.mui-input-group').on('change', 'input', function () {<br/>
+    if (this.checked) {<br/>
+    switch (this.value) {<br/>
+    case 'left-none':<br/>
+    remove('.mui-pull-left')<br/>
+    break;<br/>
+    case 'left-icon':<br/>
+    remove('.mui-pull-left');<br/>
+    header.appendChild(lefticon);<br/>
+    break;<br/>
+    case 'left-btn':<br/>
+    remove('.mui-pull-left');<br/>
+    header.appendChild(leftbtn);<br/>
+    break;<br/>
+    case 'right-none':<br/>
+    remove('.mui-pull-right');<br/>
+    break;<br/>
+    case 'right-icon':<br/>
+    remove('.mui-pull-right')<br/>
+    header.appendChild(righticon);<br/>
+    break;<br/>
+    case 'right-btn':<br/>
+    remove('.mui-pull-right');<br/>
+    header.appendChild(rightbtn);<br/>
+    break;<br/>
+    }<br/>
+    }<br/>
+    });<br/>
+    &lt;/script&gt;<br/>
+</div>
 <script src="../js/mui.min.js"></script>
 <script type="text/javascript">
     mui.init({

@@ -62,6 +62,85 @@
         </div>
     </div>
 </div>
+
+<div class="mui-card">
+    &lt;h5&gt;默认搜索框：&lt;/h5&gt;<br/>
+    &lt;div class="mui-input-row mui-search"&gt;<br/>
+    &lt;input type="search" class="mui-input-clear" placeholder=""&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;h5 class="mui-plus-visible"&gt;语音输入搜索框：&lt;/h5&gt;<br/>
+    &lt;div class="mui-input-row mui-search mui-plus-visible"&gt;<br/>
+    &lt;input id="search" type="search" class="mui-input-speech mui-input-clear" placeholder="带语音输入的搜索框"&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;h5&gt;密码框：&lt;/h5&gt;<br/>
+    &lt;div class="mui-input-row mui-password"&gt;<br/>
+    &lt;input type="password" class="mui-input-password"&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;form class="mui-input-group"&gt;<br/>
+    &lt;div class="mui-input-row"&gt;<br/>
+    &lt;label&gt;Input&lt;/label&gt;<br/>
+    &lt;input type="text" placeholder="普通输入框"&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="mui-input-row"&gt;<br/>
+    &lt;label&gt;Input&lt;/label&gt;<br/>
+    &lt;input type="text" class="mui-input-clear" placeholder="带清除按钮的输入框"&gt;<br/>
+    &lt;/div&gt;<br/>
+
+    &lt;div class="mui-input-row mui-plus-visible"&gt;<br/>
+    &lt;label&gt;Input&lt;/label&gt;<br/>
+    &lt;input type="text" class="mui-input-speech mui-input-clear" placeholder="语音输入"&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="mui-button-row"&gt;<br/>
+    &lt;button type="button" class="mui-btn mui-btn-primary" onclick="return
+    false;"&gt;确认&lt;/button&gt;&nbsp;&nbsp;<br/>
+    &lt;button type="button" class="mui-btn mui-btn-danger" onclick="return false;"&gt;取消&lt;/button&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;/form&gt;<br/>
+    &lt;div class="mui-input-row" style="margin: 10px 5px;"&gt;<br/>
+    &lt;textarea id="textarea" rows="5" placeholder="多行文本框"&gt;&lt;/textarea&gt;<br/>
+    &lt;/div&gt;<br/>
+
+    &lt;script&gt;<br/>
+    mui.init({<br/>
+    swipeBack: true //启用右滑关闭功能<br/>
+    });<br/>
+    //语音识别完成事件<br/>
+    document.getElementById("search").addEventListener('recognized', function (e) {<br/>
+    console.log(e.detail.value);<br/>
+    });<br/>
+
+    var nativeWebview, imm, InputMethodManager;<br/>
+    var initNativeObjects = function () {<br/>
+    if (mui.os.android) {<br/>
+    var main = plus.android.runtimeMainActivity();<br/>
+    var Context = plus.android.importClass("android.content.Context");<br/>
+    InputMethodManager = plus.android.importClass("android.view.inputmethod.InputMethodManager");<br/>
+    imm = main.getSystemService(Context.INPUT_METHOD_SERVICE);<br/>
+    } else {<br/>
+    nativeWebview = plus.webview.currentWebview().nativeInstanceObject();<br/>
+    }<br/>
+    };<br/>
+    var showSoftInput = function () {<br/>
+    if (mui.os.android) {<br/>
+    imm.toggleSoftInput(0, InputMethodManager.SHOW_FORCED);<br/>
+    } else {<br/>
+    nativeWebview.plusCallMethod({<br/>
+    "setKeyboardDisplayRequiresUserAction": false<br/>
+    });<br/>
+    }<br/>
+    setTimeout(function () {<br/>
+    var inputElem = document.querySelector('input');<br/>
+    inputElem.focus();<br/>
+    inputElem.parentNode.classList.add('mui-active'); //第一个是search，加上激活样式<br/>
+    }, 200);<br/>
+    };<br/>
+    mui.plusReady(function () {<br/>
+    initNativeObjects();<br/>
+    showSoftInput();<br/>
+    });<br/>
+
+    &lt;/script&gt;<br/>
+</div>
 <script src="../js/mui.min.js"></script>
 <script>
     mui.init({

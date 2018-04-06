@@ -66,6 +66,74 @@
         </ul>
     </div>
 </div>
+
+<div class="mui-card">
+    &lt;ul class="mui-table-view"&gt;<br/>
+    &lt;li class="mui-table-view-cell"&gt;<br/>
+    card（圆角列表）<br/>
+    &lt;div id="M_Toggle" class="mui-switch mui-active"&gt;<br/>
+    &lt;div class="mui-switch-handle"&gt;&lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;/li&gt;<br/>
+    &lt;li class="mui-table-view-cell"&gt;<br/>
+    Item 1<br/>
+    &lt;button type="button" class="mui-btn"&gt;<br/>
+    Button<br/>
+    &lt;/button&gt;<br/>
+    &lt;/li&gt;<br/>
+    &lt;li class="mui-table-view-cell"&gt;<br/>
+    Item 2<br/>
+    &lt;button type="button" class="mui-btn mui-btn-primary"&gt;<br/>
+    Button<br/>
+    &lt;/button&gt;<br/>
+    &lt;/li&gt;<br/>
+    &lt;li class="mui-table-view-cell"&gt;<br/>
+    Item 3<br/>
+    &lt;div class="mui-switch mui-active"&gt;<br/>
+    &lt;div class="mui-switch-handle"&gt;&lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;/li&gt;<br/>
+    &lt;li class="mui-table-view-cell"&gt;<br/>
+    Item 4<br/>
+    &lt;div class="mui-switch mui-switch-blue mui-switch-mini mui-active"&gt;<br/>
+    &lt;div class="mui-switch-handle"&gt;&lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;/li&gt;<br/>
+    &lt;li class="mui-table-view-cell mui-radio mui-left"&gt;<br/>
+    &lt;input name="radio" type="radio"&gt;Item 5<br/>
+    &lt;/li&gt;<br/>
+    &lt;li class="mui-table-view-cell mui-radio mui-left"&gt;<br/>
+    &lt;input name="radio" type="radio"&gt;Item 6<br/>
+    &lt;/li&gt;<br/>
+    &lt;li class="mui-table-view-cell mui-checkbox mui-left"&gt;<br/>
+    &lt;input name="checkbox" type="checkbox"&gt;Item 7<br/>
+    &lt;/li&gt;<br/>
+    &lt;li class="mui-table-view-cell mui-checkbox mui-left"&gt;<br/>
+    &lt;input name="checkbox" type="checkbox"&gt;Item 8<br/>
+    &lt;/li&gt;<br/>
+    &lt;/ul&gt;<br/>
+
+    &lt;script&gt;<br/>
+    mui.init({<br/>
+    swipeBack: true //启用右滑关闭功能<br/>
+    });<br/>
+
+    //圆角列表开关处理<br/>
+    document.getElementById("M_Toggle").addEventListener('toggle', function (e) {<br/>
+    var isActive = e.detail.isActive;<br/>
+    var table = document.querySelector('.mui-table-view');<br/>
+    var card = document.querySelector('.mui-card');<br/>
+    if (isActive) {<br/>
+    card.appendChild(table);<br/>
+    card.style.display = '';<br/>
+    } else {<br/>
+    var content = document.querySelector('.mui-content');<br/>
+    content.insertBefore(table, card);<br/>
+    card.style.display = 'none';<br/>
+    }<br/>
+    });<br/>
+    &lt;/script&gt;<br/>
+</div>
 </body>
 <script src="../js/mui.min.js"></script>
 <script>
